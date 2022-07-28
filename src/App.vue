@@ -18,6 +18,7 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import Content from "./components/app/Content.vue";
 import Header from "./components/app/Header.vue";
 
 //Tailwind Cheat sheet: { sm: "300px", md: "768px", lg: "976px", xl: "1440px" }

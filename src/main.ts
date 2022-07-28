@@ -3,6 +3,9 @@ import "./infra/style.scss";
 import App from "./App.vue";
 const _app = createApp(App);
 
+import router from "./infra/router";
+_app.use(router);
+
 import PrimeVue from "primevue/config";
 import primes from "./infra/components-primefaces";
 _app.use(PrimeVue);
