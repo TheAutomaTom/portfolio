@@ -2,6 +2,10 @@
 @use "primevue/resources/primevue.min.css";
 @use "primevue/resources/themes/md-dark-indigo/theme.css";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: var(--font-family);
   font-size: 16px;

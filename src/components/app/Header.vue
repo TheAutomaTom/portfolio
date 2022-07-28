@@ -48,8 +48,7 @@ header {
   left: 0;
   z-index: 10;
   @apply w-full h-12
-          flex justify-center items-center
-          bg-white;
+          flex justify-center items-center;
 }
 .header-wrapper {
   @apply w-full max-w-7xl flex px-1;
