@@ -8,6 +8,7 @@ import Dialog from "primevue/dialog";
 import Divider from "primevue/divider";
 import Dropdown from "primevue/dropdown";
 import FileUpload from "primevue/fileupload";
+import Galleria from "primevue/galleria";
 import InputMask from "primevue/inputmask";
 import InputNumber from "primevue/inputnumber";
 import InputSwitch from "primevue/inputswitch";
@@ -31,6 +32,7 @@ export default [
   { component: Divider, name: "p-hr" },
   { component: Dropdown, name: "p-dropdown" },
   { component: FileUpload, name: "p-file-upload" },
+  { component: Galleria, name: "p-galleria" },
   { component: InputMask, name: "p-input-mask" },
   { component: InputNumber, name: "p-input-number" },
   { component: InputSwitch, name: "p-input-switch" },

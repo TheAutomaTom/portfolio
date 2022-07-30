@@ -7,6 +7,9 @@
 @tailwind utilities;
 
 :root {
+  @apply w-full;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 24px;
@@ -22,6 +25,30 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+h1 {
+  @apply text-3xl;
+}
+h2 {
+  @apply text-2xl;
+}
+h3 {
+  @apply text-xl;
+}
+h4 {
+  @apply text-lg;
+}
+h5 {
+  @apply text-base;
+}
+h6 {
+  @apply text-sm;
+}
+//= PANEL ========================================//
+.p-panel {
+  @apply py-1 w-full max-w-full;
+}
+
 /*
 a {
   font-weight: 500;
