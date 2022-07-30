@@ -1,12 +1,10 @@
 // These components are intended to be created by BenefitScreeningApi calls
 // Any changes to names or parameters must be coordinated with that Api.
-import Art from "../../views/Art.vue";
-import Fake from "../../views/Fake.vue";
-import Repo from "../../views/Repo.vue";
+import Repo_3PA from "../../views/Home/Carousel/Repo_3PA.vue";
+import Repo_LGRM from "../../views/Home/Carousel/Repo_LGRM.vue";
 
 export default [
   // Note: This "name" must match our api's VueComponents' "name"
-  { component: Art, name: "Art" },
-  { component: Fake, name: "Fake" },
-  { component: Repo, name: "Repo" },
+  { component: Repo_3PA, name: "Repo_3PA" },
+  { component: Repo_LGRM, name: "Repo_LGRM" },
 ];

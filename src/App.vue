@@ -49,7 +49,7 @@ onUnmounted(() => {
   @apply w-full;
   height: 3em;
 }
-$footer-height: 15em;
+$footer-height: 2em;
 .content-wrapper {
   @apply flex justify-center;
   padding-bottom: $footer-height;

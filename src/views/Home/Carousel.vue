@@ -1,13 +1,11 @@
 <template>
-  <div class="wizard-container">
-    <transition-group name="list" tag="div" class="w-full">
-      <component
-        :is="car$.Renderables[car$.IndexToRender].name"
-        :key="car$.Renderables[car$.IndexToRender].id"
-        class="carousel-item"
-      />
-    </transition-group>
-  </div>
+  <transition-group name="list" tag="div" class="mx-5">
+    <component
+      :is="car$.Renderables[car$.IndexToRender].name"
+      :key="car$.Renderables[car$.IndexToRender].id"
+      class="carousel-item"
+    />
+  </transition-group>
 </template>
 
 <script setup lang="ts">

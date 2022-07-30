@@ -7,16 +7,12 @@ export const useCarouselState = defineStore("CarouselState", () => {
   // const app$ = useAppState();
   const Renderables = markRaw([
     {
-      id: "Art",
-      name: "Art",
+      id: "Repo_3PA",
+      name: "Repo_3PA",
     },
     {
-      id: "Repo",
-      name: "Repo",
-    },
-    {
-      id: "Fake",
-      name: "Fake",
+      id: "Repo_LGRM",
+      name: "Repo_LGRM",
     },
   ] as Array<DynamicComponent>);
 
