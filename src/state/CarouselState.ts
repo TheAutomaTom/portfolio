@@ -16,11 +16,12 @@ export const useCarouselState = defineStore("CarouselState", () => {
     },
   ] as Array<DynamicComponent>);
 
-  let duration = 3;
+  let duration = 5;
   let Timer = ref(duration);
   setInterval(() => {
     if (Timer.value !== 0) {
-      Timer.value = Timer.value - 0.25;
+      5;
+      Timer.value = Timer.value - 1;
     } else {
       Timer.value = duration;
       if (IndexToRender.value == Renderables.length - 1) {
@@ -31,7 +32,7 @@ export const useCarouselState = defineStore("CarouselState", () => {
         IndexToRender.value++;
       }
     }
-  }, 250);
+  }, 1000);
 
   const IndexToRender = ref(0);
   return {

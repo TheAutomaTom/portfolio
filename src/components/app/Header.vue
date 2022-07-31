@@ -9,7 +9,7 @@
           :src="facility.theme.logo"
           :class="facility.theme.logoSize"
         /> -->
-        <router-link class="px-3" :to="'/'">Thomas Grossi</router-link>
+        <router-link class="px-3" :to="'/'"><h1>Thomas Grossi</h1></router-link>
       </div>
       <!-- <div class="flex items-center"> -->
 
