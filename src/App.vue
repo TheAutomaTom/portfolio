@@ -39,6 +39,9 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("resize", onResize);
 });
+// function handleScroll() {
+//   app.IsScrolled = window.scrollY > 0;
+// }
 </script>
 
 <style scoped lang="scss">

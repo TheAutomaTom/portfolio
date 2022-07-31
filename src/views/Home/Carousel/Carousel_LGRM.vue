@@ -33,7 +33,7 @@
                 href="https://play.google.com/store/apps/details?id=com.TomgCo.LGRM.android"
                 ><h3><i class="pi pi-android px-1"></i>Play Store</h3></a
               >
-              <a href=""
+              <a class="mx-3" href=""
                 ><h3><i class="pi pi-apple px-1"></i>Apple Store</h3></a
               >
             </div>
