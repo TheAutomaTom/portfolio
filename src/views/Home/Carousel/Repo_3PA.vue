@@ -11,23 +11,34 @@
         src="../../../assets/imgs/3PA_logo_sm.png"
       />
 
-      <!-- DESC -->
+      <!-- Footer -->
       <div class="footer-wrapper">
-        <h1 class="px-3">Third Party Animal 🌹</h1>
-        <div class="px-5">
-          <p>
-            CSV cruncher focussed on extracting meaningful assertions from
-            public voter records.
-          </p>
+        <!-- Title -->
+        <h1>Third Party Animal 🌹</h1>
 
-          <div class="flex flex-wrap mt-3">
-            <a href="https://github.com/TheAutomaTom/third-party-animal"
-              ><h3>REPOSITORY</h3></a
-            >
-            <span class="chip">.Net WebApi</span>
-            <span class="chip">C# 9</span>
-            <span class="chip">EF Core</span>
-            <span class="chip">MS Sql Server</span>
+        <div>
+          <!-- Description -->
+          <div class-mb-3>
+            <p>
+              CSV cruncher focussed on extracting meaningful assertions from
+              public voter records.
+            </p>
+          </div>
+          <!-- Links & Tags -->
+          <div>
+            <p-hr />
+            <div class="flex flex-wrap justify-center py-3">
+              <a href="https://github.com/TheAutomaTom/third-party-animal"
+                ><h3><i class="pi pi-github px-1"></i>REPOSITORY</h3></a
+              >
+            </div>
+            <!-- Tags -->
+            <div class="chip-wrapper">
+              <span class="chip">.Net WebApi</span>
+              <span class="chip">C# 9</span>
+              <span class="chip">EF Core</span>
+              <span class="chip">MS Sql Server</span>
+            </div>
           </div>
         </div>
       </div>
@@ -43,19 +54,23 @@ export default { name: "Repo-3PA" };
 </script>
 <style scoped lang="scss">
 .footer-wrapper {
-  @apply absolute bottom-0 w-full py-8 px-3;
+  @apply absolute bottom-0 w-full px-9 py-5 mt-10;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
-    rgba(22, 27, 34, 0.95) 40%,
-    rgba(22, 27, 34, 0.8) 80%,
+    rgba(22, 27, 34, 0.95) 80%,
+    rgba(22, 27, 34, 0.8) 90%,
     rgba(22, 27, 34, 0) 100%
   );
 }
 
+.chip-wrapper {
+  @apply flex flex-wrap mt-3 justify-end;
+}
 .chip {
-  @apply bg-yellow-200 rounded-full px-2 mx-2;
-  color: black;
+  @apply rounded-full px-3 py-1 mx-2 text-sm font-bold;
   font-family: monospace;
+  color: var(--primary-color-text);
+  background-color: var(--primary-color);
 }
 </style>
