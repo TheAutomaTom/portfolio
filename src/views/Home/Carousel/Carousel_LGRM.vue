@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="pl-4">Data Engineering</h3>
+    <h3 class="pl-4">Android and iOS Apps</h3>
 
     <!-- IMAGE -->
 
@@ -8,36 +8,40 @@
       <img
         class="w-full"
         alt="user header"
-        src="../../../assets/imgs/3PA_logo_sm.png"
+        src="../../../assets/imgs/LGRM_card.png"
       />
 
       <!-- Footer -->
       <div class="footer-wrapper">
         <!-- Title -->
-        <h1>Third Party Animal 🌹</h1>
+        <h1>The Lean & Green Recipe Machine</h1>
 
         <div>
           <!-- Description -->
           <div class-mb-3>
             <p>
-              CSV cruncher focussed on extracting meaningful assertions from
-              public voter records.
+              Xamarin.Forms mobile app released on Android and iOS. Useful
+              recipe maker for my friend's "Optavia" health-coaching program.
             </p>
           </div>
           <!-- Links & Tags -->
           <div>
             <p-hr />
             <div class="flex flex-wrap justify-center py-3">
-              <a href="https://github.com/TheAutomaTom/third-party-animal"
-                ><h3><i class="pi pi-github px-1"></i>REPOSITORY</h3></a
+              <a
+                class="mx-3"
+                href="https://play.google.com/store/apps/details?id=com.TomgCo.LGRM.android"
+                ><h3><i class="pi pi-android px-1"></i>Play Store</h3></a
+              >
+              <a href=""
+                ><h3><i class="pi pi-apple px-1"></i>Apple Store</h3></a
               >
             </div>
             <!-- Tags -->
             <div class="chip-wrapper">
-              <span class="chip">.Net WebApi</span>
-              <span class="chip">C# </span>
-              <span class="chip">EF Core</span>
-              <span class="chip">MS Sql Server</span>
+              <span class="chip">Xamarin.Form</span>
+              <span class="chip">C#</span>
+              <span class="chip">Sql Lite</span>
             </div>
           </div>
         </div>
@@ -50,7 +54,7 @@
 //
 </script>
 <script lang="ts">
-export default { name: "Repo-3PA" };
+export default { name: "Carousel_LGRM" };
 </script>
 <style scoped lang="scss">
 .footer-wrapper {

@@ -6,14 +6,18 @@ import { DynamicComponent } from "../models/dynamic-components";
 export const useCarouselState = defineStore("CarouselState", () => {
   // const app$ = useAppState();
   const Renderables = markRaw([
+    // {
+    //   id: "Carousel_3PA",
+    //   name: "Carousel_3PA",
+    // },
     {
-      id: "Repo_3PA",
-      name: "Repo_3PA",
+      id: "Carousel_VuenarchistsCookbook",
+      name: "Carousel_VuenarchistsCookbook",
     },
-    {
-      id: "Repo_LGRM",
-      name: "Repo_LGRM",
-    },
+    // {
+    //   id: "Carousel_LGRM",
+    //   name: "Carousel_LGRM",
+    // },
   ] as Array<DynamicComponent>);
 
   let duration = 5;

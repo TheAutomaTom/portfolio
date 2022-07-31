@@ -15,7 +15,7 @@
       </div>
     </div>
     <!-- Footer ------------------------------------------------------>
-    <Footer class="footer-wrapper" />
+    <!-- <Footer class="footer-wrapper" /> -->
   </div>
 </template>
 
