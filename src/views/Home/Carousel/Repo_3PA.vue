@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Data Engineering</h3>
+    <h3 class="pl-4">Data Engineering</h3>
 
     <!-- IMAGE -->
 
@@ -35,7 +35,7 @@
             <!-- Tags -->
             <div class="chip-wrapper">
               <span class="chip">.Net WebApi</span>
-              <span class="chip">C# 9</span>
+              <span class="chip">C# </span>
               <span class="chip">EF Core</span>
               <span class="chip">MS Sql Server</span>
             </div>
@@ -65,10 +65,10 @@ export default { name: "Repo-3PA" };
 }
 
 .chip-wrapper {
-  @apply flex flex-wrap mt-3 justify-end;
+  @apply flex flex-wrap justify-end;
 }
 .chip {
-  @apply rounded-full px-3 py-1 mx-2 text-sm font-bold;
+  @apply rounded-full px-2 py-1 mx-1 my-2 text-sm font-bold;
   font-family: monospace;
   color: var(--primary-color-text);
   background-color: var(--primary-color);

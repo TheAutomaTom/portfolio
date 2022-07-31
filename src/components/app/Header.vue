@@ -4,26 +4,15 @@
     <div class="header-wrapper">
       <!--=== Left Aligned ===---------------------------->
       <div class="header-left">
-        <!-- <img
-          alt="Logo"
-          :src="facility.theme.logo"
-          :class="facility.theme.logoSize"
-        /> -->
-        <router-link class="px-3" :to="'/'"><h1>Thomas Grossi</h1></router-link>
+        <router-link class="px-3" :to="'/'"
+          ><h1 style="font-family: Alegreya">Thomas Grossi</h1></router-link
+        >
       </div>
-      <!-- <div class="flex items-center"> -->
-
-      <!-- <router-link class="px-3" :to="'/'"> Wizard </router-link>
-        <span class="color-secondary">|</span>
-        <router-link class="px-3" :to="'StyleGuide'"> Style Guide </router-link>
-        <span class="color-secondary">|</span> -->
-      <!-- <router-link class="px-3" :to="'FilePickers'"> -->
-      <!-- </div> -->
 
       <!--=== Right Aligned ===---------------------------->
       <div class="header-right">
         <router-link class="px-3" :to="'/'"
-          >Design & Execution as Fine Art</router-link
+          >Design&nbsp;&amp;&nbsp;Execution as&nbsp;Fine&nbsp;Art</router-link
         >
       </div>
     </div>

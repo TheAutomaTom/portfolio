@@ -17,12 +17,18 @@
 
 /*
 //From Prime Faces Theme...
+--text-color: #dedede;
+--text-color-secondary: #dedede;
+--primary-color: #FFE082;
+  --primary-color-text: #212529;   
+  */
+:root {
+  //From Prime Faces Theme...
   --text-color: #dedede;
   --text-color-secondary: #dedede;
-  --primary-color: #FFE082;
-  --primary-color-text: #212529;   
-*/
-:root {
+  --primary-color: #ffe082;
+  --primary-color-text: #212529;
+
   @apply w-full;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   font-family: var(--font-family);
@@ -39,12 +45,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  //From Prime Faces Theme...
-  --text-color: #dedede;
-  --text-color-secondary: #dedede;
-  --primary-color: #ffe082;
-  --primary-color-text: #212529;
 }
 
 h1 {
