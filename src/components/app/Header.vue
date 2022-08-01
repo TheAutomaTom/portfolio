@@ -29,7 +29,9 @@ header {
           flex justify-center items-center;
 }
 .header-wrapper {
-  @apply w-full max-w-7xl flex px-1;
+  @apply w-full max-w-7xl flex px-1 absolute top-0;
+  background-color: var(--background-color);
+  border-bottom: 1px solid grey;
 }
 .header-left {
   @apply flex flex-col justify-center;

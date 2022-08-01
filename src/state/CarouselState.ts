@@ -14,10 +14,10 @@ export const useCarouselState = defineStore("CarouselState", () => {
       id: "Carousel_VuenarchistsCookbook",
       name: "Carousel_VuenarchistsCookbook",
     },
-    {
-      id: "Carousel_LGRM",
-      name: "Carousel_LGRM",
-    },
+    // {
+    //   id: "Carousel_LGRM",
+    //   name: "Carousel_LGRM",
+    // },
   ] as Array<DynamicComponent>);
 
   let duration = 5;

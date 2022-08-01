@@ -4,7 +4,7 @@
     <!-- Header ------------------------------------------------------>
     <Header />
     <div class="grid grid-rows-2" style="grid-template-rows: 3em 1fr">
-      <p-hr class="buffer-header" />
+      <div class="buffer-header" />
       <!-- Content ------------------------------------------------------>
       <div class="content-wrapper">
         <Content class="content">
