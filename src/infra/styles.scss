@@ -73,8 +73,7 @@ h6 {
   font-family: "Alegreya", serif;
 }
 //= ANCHORS ======================================//
-a {
-}
+// a { ... }
 a:hover {
   color: var(--primary-color);
   @apply underline;
@@ -86,18 +85,41 @@ a:hover {
 }
 
 //= CAROUSEL HERO ================================//
-.footer-wrapper {
-  @apply absolute bottom-0 w-full px-9 py-5 mt-10;
-  background: rgb(0, 0, 0);
+.carousel-info-wrapper {
+  @apply absolute w-full px-9 mt-1;
   background: linear-gradient(
     0deg,
     rgba(36, 36, 36, 0.95) 80%,
     rgba(36, 36, 36, 0.8) 90%,
     rgba(36, 36, 36, 0) 100%
   );
-  // rgba(22, 27, 34, 0.95) 80%,
-  // rgba(22, 27, 34, 0.8) 90%,
-  // rgba(22, 27, 34, 0) 100%
+  @media (min-width: 600px) {
+    @apply mt-10  py-5;
+    bottom: -25%;
+  }
+  // @media (max-width: 500px) {  }
+  // @media (max-width: 500px) {  }
+  // @media (max-width: 500px) {  }
+  // @media (max-width: 500px) {  }
+  //   bottom: 50%;
+  // }
+}
+
+.carousel-footer-wrapper {
+  @apply flex flex-wrap items-center;
+  vertical-align: middle;
+}
+.carousel-links-wrapper {
+  @apply flex flex-wrap;
+  @media (max-width: 500px) {
+    @apply w-full justify-center;
+  }
+}
+.carousel-chip-wrapper {
+  @apply flex flex-wrap flex-grow justify-end;
+  @media (max-width: 500px) {
+    @apply w-full justify-center;
+  }
 }
 
 //= CHIPS ========================================//
@@ -108,9 +130,12 @@ a:hover {
 
 .title-chip {
   @extend .chip;
-  @apply absolute bg-indigo-900;
+  @apply absolute bg-sky-900 font-bold;
+  font-family: var(--font-family);
   top: 0.5em;
   left: 0.75em;
+  border-bottom: 3px black solid;
+  border-left: 3px black solid;
 }
 
 .tag-chip {
