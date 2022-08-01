@@ -1,46 +1,46 @@
 <template>
   <div>
-    <h3 class="pl-4">Data Engineering</h3>
-
-    <!-- IMAGE -->
-
+    <!-- Hero -->
     <div class="w-full absolute">
+      <h2 class="title-chip">Data Engineering</h2>
       <img
         class="w-full"
         alt="user header"
         src="../../../assets/imgs/3PA_logo_sm.png"
       />
 
-      <!-- Footer -->
+      <!-- Content -->
       <div class="footer-wrapper">
         <!-- Title -->
         <h1>Third Party Animal 🌹</h1>
 
-        <div>
-          <!-- Description -->
-          <div class-mb-3>
-            <p>
-              CSV cruncher focussed on extracting meaningful assertions from
-              public voter records.
-            </p>
+        <!-- Description -->
+        <div class="mb-3">
+          <p>
+            CSV cruncher focussed on extracting meaningful assertions from
+            public voter records.
+          </p>
+          <p-hr />
+        </div>
+
+        <div class="carousel-footer-wrapper">
+          <div class="carousel-link-wrapper">
+            <a href="https://github.com/TheAutomaTom/third-party-animal"
+              ><h3 class="mx-2">
+                <i class="pi pi-github px-1"></i>REPOSITORY
+              </h3></a
+            >
           </div>
-          <!-- Links & Tags -->
-          <div>
-            <p-hr />
-            <div class="flex flex-wrap justify-center py-3">
-              <a href="https://github.com/TheAutomaTom/third-party-animal"
-                ><h3><i class="pi pi-github px-1"></i>REPOSITORY</h3></a
-              >
-            </div>
-            <!-- Tags -->
-            <div class="chip-wrapper">
-              <span class="chip">.Net WebApi</span>
-              <span class="chip">C# </span>
-              <span class="chip">EF Core</span>
-              <span class="chip">MS Sql Server</span>
-            </div>
+          <!-- Tags -->
+          <div class="carousel-chip-wrapper">
+            <span class="tag-chip">.Net WebApi</span>
+            <span class="tag-chip">C# </span>
+            <span class="tag-chip">EF Core</span>
+            <span class="tag-chip">MS Sql Server</span>
           </div>
         </div>
+
+        <!--  -->
       </div>
     </div>
   </div>
@@ -53,24 +53,20 @@
 export default { name: "Carousel_3PA" };
 </script>
 <style scoped lang="scss">
-.footer-wrapper {
-  @apply absolute bottom-0 w-full px-9 py-5 mt-10;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(22, 27, 34, 0.95) 80%,
-    rgba(22, 27, 34, 0.8) 90%,
-    rgba(22, 27, 34, 0) 100%
-  );
+.carousel-footer-wrapper {
+  @apply flex flex-wrap items-center;
+  vertical-align: middle;
 }
-
-.chip-wrapper {
-  @apply flex flex-wrap justify-end;
+.carousel-link-wrapper {
+  @apply flex flex-wrap;
+  @media (max-width: 500px) {
+    @apply w-full justify-center;
+  }
 }
-.chip {
-  @apply rounded-full px-2 py-1 mx-1 my-2 text-sm font-bold;
-  font-family: monospace;
-  color: var(--primary-color-text);
-  background-color: var(--primary-color);
+.carousel-chip-wrapper {
+  @apply flex flex-wrap flex-grow justify-end;
+  @media (max-width: 500px) {
+    @apply w-full justify-center;
+  }
 }
 </style>

@@ -10,10 +10,10 @@ export const useCarouselState = defineStore("CarouselState", () => {
       id: "Carousel_3PA",
       name: "Carousel_3PA",
     },
-    {
-      id: "Carousel_VuenarchistsCookbook",
-      name: "Carousel_VuenarchistsCookbook",
-    },
+    // {
+    //   id: "Carousel_VuenarchistsCookbook",
+    //   name: "Carousel_VuenarchistsCookbook",
+    // },
     // {
     //   id: "Carousel_LGRM",
     //   name: "Carousel_LGRM",

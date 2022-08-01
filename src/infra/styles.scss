@@ -85,6 +85,41 @@ a:hover {
   @apply py-1 w-full max-w-full;
 }
 
+//= CAROUSEL HERO ================================//
+.footer-wrapper {
+  @apply absolute bottom-0 w-full px-9 py-5 mt-10;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(36, 36, 36, 0.95) 80%,
+    rgba(36, 36, 36, 0.8) 90%,
+    rgba(36, 36, 36, 0) 100%
+  );
+  // rgba(22, 27, 34, 0.95) 80%,
+  // rgba(22, 27, 34, 0.8) 90%,
+  // rgba(22, 27, 34, 0) 100%
+}
+
+//= CHIPS ========================================//
+
+.chip {
+  @apply rounded-full px-3 mx-1 my-2;
+}
+
+.title-chip {
+  @extend .chip;
+  @apply absolute bg-indigo-900;
+  top: 0.5em;
+  left: 0.75em;
+}
+
+.tag-chip {
+  @extend .chip;
+  @apply font-bold;
+  font-family: monospace;
+  color: var(--primary-color-text);
+  background-color: var(--primary-color);
+}
 /*
 body {
   margin: 0;
