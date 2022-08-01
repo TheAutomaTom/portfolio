@@ -3,8 +3,8 @@
     <!-- Modal ------------------------------------------------------->
     <!-- Header ------------------------------------------------------>
     <Header />
-    <div class="grid grid-rows-2" style="grid-template-rows: 3em 1fr">
-      <div class="buffer-header" />
+    <div class="layout-wrapper">
+      <div class="header-buffer bg-green-800" />
       <!-- Content ------------------------------------------------------>
       <div class="content-wrapper">
         <Content class="content">
@@ -22,7 +22,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
 import Content from "./components/app/Content.vue";
-import Footer from "./components/app/Footer.vue";
 import Header from "./components/app/Header.vue";
 
 //Tailwind Cheat sheet: { sm: "300px", md: "768px", lg: "976px", xl: "1440px" }
@@ -48,9 +47,18 @@ onUnmounted(() => {
 .app-wrapper {
   @apply w-full;
 }
-.buffer-header {
-  @apply w-full;
-  height: 3em;
+.layout-wrapper {
+  @apply grid grid-rows-2;
+  grid-template-rows: 3em 1fr;
+  @media (max-width: 500px) {
+    grid-template-rows: 6em 1fr;
+  }
+}
+.header-buffer {
+  @apply w-full h-9;
+  @media (max-width: 500px) {
+    @apply h-16;
+  }
 }
 $footer-height: 2em;
 .content-wrapper {
