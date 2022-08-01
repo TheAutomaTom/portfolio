@@ -25,11 +25,11 @@
       <div class="carousel-footer-wrapper">
         <!-- Links -->
         <div class="carousel-links-wrapper">
-          <a href="https://github.com/TheAutomaTom/third-party-animal"
-            ><h3 class="mx-2">
-              <i class="pi pi-github px-1"></i>REPOSITORY
-            </h3></a
-          >
+          <link-with-icon
+            url="https://github.com/TheAutomaTom/third-party-animal"
+            icon="pi-github"
+            label="REPOSITORY"
+          />
         </div>
         <!-- Tags -->
         <div class="carousel-chip-wrapper">

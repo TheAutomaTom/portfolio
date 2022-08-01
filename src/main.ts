@@ -11,6 +11,11 @@ import router from "./infra/router";
 _app.use(router);
 
 // Register Components
+import standards from "./infra/components/standards";
+standards.forEach((element) => {
+  _app.component(element.name, element.component);
+});
+
 import PrimeVue from "primevue/config";
 import primes from "./infra/components/primefaces";
 _app.use(PrimeVue);
