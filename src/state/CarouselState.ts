@@ -18,9 +18,13 @@ export const useCarouselState = defineStore("CarouselState", () => {
       id: "Carousel_LGRM",
       name: "Carousel_LGRM",
     },
+    {
+      id: "Carousel_Animation",
+      name: "Carousel_Animation",
+    },
   ] as Array<DynamicComponent>);
 
-  let duration = 200;
+  let duration = 190;
   let evaluationInterval = 35;
   let timer = ref(duration);
   setInterval(() => {
@@ -39,8 +43,7 @@ export const useCarouselState = defineStore("CarouselState", () => {
   }, evaluationInterval);
 
   const Progress = computed(() => {
-    const increment = 100 / duration; // = 20
-    console.log(increment * timer.value);
+    const increment = 100 / duration;
     return increment * timer.value;
   });
 

@@ -1,14 +1,12 @@
 <template>
   <div class="carousel-wrapper">
-    <div class="slidecontainer">
-      <input
-        type="range"
-        min="1"
-        max="100"
-        :value="car$.Progress"
-        class="progress-bar w-full"
-      />
-    </div>
+    <input
+      type="range"
+      min="1"
+      max="100"
+      :value="car$.Progress"
+      class="progress-bar w-full"
+    />
     <transition-group name="list" tag="div" class="mx-5">
       <component
         :is="car$.Renderables[car$.IndexToRender].name"
