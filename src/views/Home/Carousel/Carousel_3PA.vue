@@ -1,17 +1,17 @@
 <template>
   <div class="w-full absolute">
     <!-- Hero -->
-    <span class="title-chip">Data Engineering</span>
+    <span class="title-chip">Date Engineering</span>
     <img
       class="w-full"
-      alt="user header"
       src="../../../assets/imgs/3PA_logo_sm.png"
+      alt="Third Party Animal"
     />
 
     <!-- Content -->
     <div class="carousel-info-wrapper">
       <!-- Title -->
-      <h1>Third Party Animal 🌹</h1>
+      <h1>Third&nbsp;Party Animal&nbsp;🌹</h1>
 
       <!-- Description -->
       <div class="mb-3">

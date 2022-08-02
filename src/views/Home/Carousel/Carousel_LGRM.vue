@@ -1,51 +1,48 @@
 <template>
-  <div>
-    <h3 class="pl-4">Android and iOS Apps</h3>
+  <div class="w-full absolute">
+    <!-- Hero -->
+    <span class="title-chip">Android &amp; iOS&nbsp;Apps</span>
+    <img
+      class="w-full"
+      src="../../../assets/imgs/LGRM_card.png"
+      alt="Mobile apps"
+    />
 
-    <!-- IMAGE -->
+    <!-- Content -->
+    <div class="carousel-info-wrapper">
+      <!-- Title -->
+      <h1>Lean&nbsp;&amp; Green Recipe&nbsp;Machine</h1>
 
-    <div class="w-full absolute">
-      <img
-        class="w-full"
-        alt="user header"
-        src="../../../assets/imgs/LGRM_card.png"
-      />
+      <!-- Description -->
+      <div class="mb-3">
+        <p>
+          Xamarin.Forms mobile app released on Android and iOS. Useful recipe
+          maker for my friend's "Optavia" health-coaching program.
+        </p>
+        <p-hr />
+      </div>
 
-      <!-- Footer -->
-      <div class="footer-wrapper">
-        <!-- Title -->
-        <h1>The Lean & Green Recipe Machine</h1>
-
-        <div>
-          <!-- Description -->
-          <div class-mb-3>
-            <p>
-              Xamarin.Forms mobile app released on Android and iOS. Useful
-              recipe maker for my friend's "Optavia" health-coaching program.
-            </p>
-          </div>
-          <!-- Links & Tags -->
-          <div>
-            <p-hr />
-            <div class="flex flex-wrap justify-center py-3">
-              <a
-                class="mx-3"
-                href="https://play.google.com/store/apps/details?id=com.TomgCo.LGRM.android"
-                ><h3><i class="pi pi-android px-1"></i>Play Store</h3></a
-              >
-              <a class="mx-3" href=""
-                ><h3><i class="pi pi-apple px-1"></i>Apple Store</h3></a
-              >
-            </div>
-            <!-- Tags -->
-            <div class="chip-wrapper">
-              <span class="chip">Xamarin.Form</span>
-              <span class="chip">C#</span>
-              <span class="chip">Sql Lite</span>
-            </div>
-          </div>
+      <div class="carousel-footer-wrapper">
+        <!-- Links -->
+        <div class="carousel-links-wrapper">
+          <link-with-icon
+            url="https://play.google.com/store/apps/details?id=com.TomgCo.LGRM.android"
+            icon="pi-android"
+            label="Play Store"
+          />
+          <link-with-icon url="" icon="pi-apple" label="Apple Store" />
+        </div>
+        <!-- Tags -->
+        <div class="carousel-chip-wrapper">
+          <span class="tag-chip">Xamarin.Form</span>
+          <span class="tag-chip">C#</span>
+          <span class="tag-chip">Sql Lite</span>
+          <span class="tag-chip">Android</span>
+          <span class="tag-chip">iOS</span>
         </div>
       </div>
+
+      <!--  -->
     </div>
   </div>
 </template>
@@ -56,25 +53,4 @@
 <script lang="ts">
 export default { name: "Carousel_LGRM" };
 </script>
-<style scoped lang="scss">
-.footer-wrapper {
-  @apply absolute bottom-0 w-full px-9 py-5 mt-10;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(22, 27, 34, 0.95) 80%,
-    rgba(22, 27, 34, 0.8) 90%,
-    rgba(22, 27, 34, 0) 100%
-  );
-}
-
-.chip-wrapper {
-  @apply flex flex-wrap justify-end;
-}
-.chip {
-  @apply rounded-full px-2 py-1 mx-1 my-2 text-sm font-bold;
-  font-family: monospace;
-  color: var(--primary-color-text);
-  background-color: var(--primary-color);
-}
-</style>
+<style scoped lang="scss"></style>

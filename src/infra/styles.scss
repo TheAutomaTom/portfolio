@@ -29,9 +29,11 @@
   --primary-color: #ffe082;
   --primary-color-text: #212529;
   --background-color: #242424;
+  --font-title: "Alegreya", serif;
 
   @apply w-full;
   overflow-x: hidden; /* Hide horizontal scrollbar */
+
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 24px;
@@ -50,27 +52,27 @@
 
 h1 {
   @apply text-3xl;
-  font-family: "Alegreya", serif;
+  font-family: var(--font-title);
 }
 h2 {
   @apply text-2xl;
-  font-family: "Alegreya", serif;
+  font-family: var(--font-title);
 }
 h3 {
   @apply text-xl;
-  font-family: "Alegreya", serif;
+  font-family: var(--font-title);
 }
 h4 {
   @apply text-lg;
-  font-family: "Alegreya", serif;
+  font-family: var(--font-title);
 }
 h5 {
   @apply text-base;
-  font-family: "Alegreya", serif;
+  font-family: var(--font-title);
 }
 h6 {
   @apply text-sm;
-  font-family: "Alegreya", serif;
+  font-family: var(--font-title);
 }
 //= ANCHORS ======================================//
 // a { ... }
@@ -131,11 +133,11 @@ a:hover {
 .title-chip {
   @extend .chip;
   @apply absolute bg-sky-900 font-bold;
-  font-family: var(--font-family);
+  font-family: var(--font-title);
   top: 0.5em;
   left: 0.75em;
-  border-bottom: 3px black solid;
-  border-left: 3px black solid;
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
 }
 
 .tag-chip {

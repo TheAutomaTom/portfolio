@@ -1,51 +1,48 @@
 <template>
-  <div>
-    <h3 class="pl-4">Vue 3 UIs</h3>
+  <div class="w-full absolute">
+    <!-- Hero -->
+    <span class="title-chip">Front-End User Interfaces</span>
+    <img
+      class="w-full"
+      src="../../../assets/imgs/Vue_Logo.png"
+      alt="Front-End User Interfaces"
+    />
 
-    <!-- IMAGE -->
+    <!-- Content -->
+    <div class="carousel-info-wrapper">
+      <!-- Title -->
+      <h1>The&nbsp;Vue-Narchists' Cookbook&nbsp;Ⓐ</h1>
 
-    <div class="w-full absolute">
-      <img
-        class="w-full"
-        alt="user header"
-        src="../../../assets/imgs/Vue_Logo.png"
-      />
+      <!-- Description -->
+      <div class="mb-3">
+        <p>Specialized front-end solutions in Vue.js 3</p>
+        <p-hr />
+      </div>
 
-      <!-- Footer -->
-      <div class="footer-wrapper">
-        <!-- Title -->
-        <h1>The Vue-Narchists' Cookbook</h1>
-
-        <div>
-          <!-- Description -->
-          <div class-mb-3>
-            <p>Specialized front-end solutions in Vue.js 3</p>
-          </div>
-          <!-- Links & Tags -->
-          <div>
-            <p-hr />
-            <div class="flex flex-wrap justify-center py-3">
-              <a
-                class="mx-3"
-                href="https://github.com/TheAutomaTom/The-Vue-Narchists-Cookbook"
-                ><h3><i class="pi pi-github px-1"></i>REPOSITORY</h3></a
-              >
-              <a
-                class="mx-3"
-                href="https://www.surrealitycheck.org/The-Vue-Narchists-Cookbook/"
-                ><h3><i class="pi pi-external-link px-1"></i>LIVE SITE</h3></a
-              >
-            </div>
-            <!-- Tags -->
-            <div class="chip-wrapper">
-              <span class="chip">Vue.js 3</span>
-              <span class="chip">Typescript</span>
-              <span class="chip">Pinia</span>
-              <span class="chip">Router</span>
-            </div>
-          </div>
+      <div class="carousel-footer-wrapper">
+        <!-- Links -->
+        <div class="carousel-links-wrapper">
+          <link-with-icon
+            url="https://github.com/TheAutomaTom/The-Vue-Narchists-Cookbook"
+            icon="pi-github"
+            label="REPOSITORY"
+          />
+          <link-with-icon
+            url="https://www.surrealitycheck.org/The-Vue-Narchists-Cookbook/"
+            icon="pi-external-link"
+            label="LIVE SITE"
+          />
+        </div>
+        <!-- Tags -->
+        <div class="carousel-chip-wrapper">
+          <span class="tag-chip bg-cyan-800">Vue.js 3</span>
+          <span class="tag-chip bg-cyan-800">Typescript</span>
+          <span class="tag-chip bg-cyan-800">Pinia</span>
+          <span class="tag-chip bg-cyan-800">Router</span>
         </div>
       </div>
+
+      <!--  -->
     </div>
   </div>
 </template>
@@ -54,28 +51,6 @@
 //
 </script>
 <script lang="ts">
-export default { name: "Carousel_VueNarchistsCookbook" };
+export default { name: "Carousel_3PA" };
 </script>
-<style scoped lang="scss">
-.footer-wrapper {
-  @apply absolute bottom-0 w-full px-9 py-5 mt-10;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(22, 27, 34, 0.95) 80%,
-    rgba(22, 27, 34, 0.8) 90%,
-    rgba(22, 27, 34, 0) 100%
-  );
-}
-
-.chip-wrapper {
-  @apply flex flex-wrap justify-end;
-}
-.chip {
-  @apply rounded-full px-2 py-1 mx-1 my-2 text-sm font-bold
-  bg-green-400;
-  font-family: monospace;
-  color: var(--primary-color-text);
-  // background-color: var(--primary-color);
-}
-</style>
+<style scoped lang="scss"></style>

@@ -4,7 +4,7 @@
     <!-- Header ------------------------------------------------------>
     <Header />
     <div class="layout-wrapper">
-      <div class="header-buffer bg-green-800" />
+      <div class="header-buffer" />
       <!-- Content ------------------------------------------------------>
       <div class="content-wrapper">
         <Content class="content">
