@@ -7,6 +7,11 @@ export const routes = [
     component: Home,
   },
   {
+    path: "/ThePerfectNumberInput",
+    name: "ThePerfectNumberInput",
+    component: () => import("../views/PerfectNumberInput.vue"),
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "404",
     component: () => import("../views/NotFound.vue"),
