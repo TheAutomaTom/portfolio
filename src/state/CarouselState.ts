@@ -1,4 +1,4 @@
-import { ref, markRaw, nextTick } from "vue";
+import { ref, markRaw, nextTick, computed } from "vue";
 import { defineStore } from "pinia";
 // import { useAppState } from "./AppState";
 import { DynamicComponent } from "../models/dynamic-components";
@@ -20,14 +20,14 @@ export const useCarouselState = defineStore("CarouselState", () => {
     },
   ] as Array<DynamicComponent>);
 
-  let duration = 5;
-  let Timer = ref(duration);
+  let duration = 200;
+  let evaluationInterval = 35;
+  let timer = ref(duration);
   setInterval(() => {
-    if (Timer.value !== 0) {
-      5;
-      Timer.value = Timer.value - 1;
+    if (timer.value !== 0) {
+      timer.value = timer.value - 1;
     } else {
-      Timer.value = duration;
+      timer.value = duration;
       if (IndexToRender.value == Renderables.length - 1) {
         nextTick();
         IndexToRender.value = 0;
@@ -36,11 +36,17 @@ export const useCarouselState = defineStore("CarouselState", () => {
         IndexToRender.value++;
       }
     }
-  }, 1000);
+  }, evaluationInterval);
+
+  const Progress = computed(() => {
+    const increment = 100 / duration; // = 20
+    console.log(increment * timer.value);
+    return increment * timer.value;
+  });
 
   const IndexToRender = ref(0);
   return {
-    Timer,
+    Progress,
     Renderables,
     IndexToRender,
   };

@@ -19,11 +19,11 @@ import Divider from "primevue/divider";
 // import ProgressSpinner from "primevue/progressspinner";
 // import RadioButton from "primevue/radiobutton";
 // import ScrollPanel from "primevue/scrollpanel";
-import ProgressBar from "primevue/progressbar";
+// import ProgressBar from "primevue/progressbar";
 
 // Ultimately to be registered in main.ts for global access.
 export default [
-  { component: ProgressBar, name: "p-progress-bar" },
+  // { component: ProgressBar, name: "p-progress-bar" },
   // { component: Button, name: "p-button" },
   // { component: Calendar, name: "p-calendar" },
   // { component: Card, name: "p-card" },
