@@ -1,6 +1,6 @@
 <template>
   <!--  -->
-  <Carousel />
+  <Carousel class="max-w-full overflow-hidden" />
 </template>
 
 <script setup lang="ts">
