@@ -2,11 +2,12 @@
   <input
     v-model="displayed"
     @input="handle"
+    inputmode="decimal"
     @blur="handleBlur"
     v-bind="$attrs"
     :class="getClasses()"
   />
-  <div v-if="diagnosticMode" class="diagnostic text-pink-400">
+  <div v-if="diagnosticMode" class="diagnostic text-amber-400">
     <em>
       <p style="text-decoration: underline">InputNumbers Diagnostics</p>
       <p class="px-2">Displayed: {{ displayed }}</p>
