@@ -20,7 +20,6 @@ export default { name: "InputNumbers" };
 </script>
 <script setup lang="ts">
 import { nextTick, onMounted, ref } from "vue";
-import _round from "lodash";
 
 const emits = defineEmits(["update:modelValue"]);
 const props = defineProps({

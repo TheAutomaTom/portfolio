@@ -32,7 +32,8 @@
   --font-title: "Alegreya", serif;
 
   @apply w-full;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  max-width: 100%;
+  overflow-x: hidden;
 
   font-family: var(--font-family);
   font-size: 16px;

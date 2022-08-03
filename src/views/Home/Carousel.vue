@@ -34,6 +34,14 @@ const car$ = useCarouselState();
   width: 3em; /* Set a specific slider handle width */
   height: 0.25em; /* Slider handle height */
 }
+input[type="range"]::-moz-range-thumb {
+  @apply bg-teal-800;
+  height: 0.25em; /* Slider handle height */
+  width: 3em;
+  outline: none;
+  border: none;
+  appearance: none;
+}
 .progress-bar {
   -webkit-appearance: none;
   width: 100%;
