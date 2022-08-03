@@ -31,10 +31,6 @@
   --background-color: #242424;
   --font-title: "Alegreya", serif;
 
-  @apply w-full;
-  max-width: 100%;
-  overflow-x: hidden;
-
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 24px;
@@ -50,7 +46,11 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 h1 {
   @apply text-3xl;
   font-family: var(--font-title);
