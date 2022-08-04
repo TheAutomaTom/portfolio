@@ -1,7 +1,9 @@
 <template>
   <div class="w-full absolute">
     <!-- Hero -->
-    <span class="title-chip">Front-End User Interfaces</span>
+    <span class="title-chip" style="background-color: darkslateblue"
+      >Front-End User Interfaces</span
+    >
     <img
       class="w-full"
       src="../../../assets/imgs/Vue_Logo.png"

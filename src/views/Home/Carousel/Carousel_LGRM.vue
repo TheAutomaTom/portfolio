@@ -1,7 +1,11 @@
 <template>
   <div class="w-full absolute">
     <!-- Hero -->
-    <span class="title-chip">Android &amp; iOS&nbsp;Apps</span>
+    <span
+      class="title-chip bg-sky-900"
+      style="top: 37%; transform: rotate(0deg)"
+      >Android &amp; iOS&nbsp;Apps</span
+    >
     <img
       class="w-full"
       src="../../../assets/imgs/LGRM_card.png"

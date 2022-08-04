@@ -1,9 +1,9 @@
 <template>
-  <div class="w-full absolute">
+  <div class="absolute">
     <!-- Hero -->
-    <span class="title-chip">Fun Stuff</span>
+    <span class="title-chip bg-violet-900">Fun Stuff</span>
     <img
-      class="w-full"
+      class="w-full max-w-fit"
       src="../../../assets/imgs/Animation_card.png"
       alt="Animation"
     />
@@ -42,11 +42,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-//
-</script>
 <script lang="ts">
 export default { name: "Carousel_Animation" };
 </script>
-<style scoped lang="scss"></style>

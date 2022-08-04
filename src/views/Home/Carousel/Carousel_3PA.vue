@@ -1,7 +1,9 @@
 <template>
   <div class="w-full absolute">
     <!-- Hero -->
-    <span class="title-chip">Date Engineering</span>
+    <span class="title-chip" style="top: 3%; background-color: crimson"
+      >Date Engineering</span
+    >
     <img
       class="w-full"
       src="../../../assets/imgs/3PA_logo_sm.png"

@@ -133,12 +133,13 @@ a:hover {
 
 .title-chip {
   @extend .chip;
-  @apply absolute bg-sky-900 font-bold;
+  @apply absolute font-bold;
   font-family: var(--font-title);
   top: 0.5em;
   left: 0.75em;
   border-bottom: 1px black solid;
   border-left: 1px black solid;
+  transform: rotate(-7deg);
 }
 
 .tag-chip {
