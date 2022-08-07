@@ -5,7 +5,7 @@
       min="1"
       max="100"
       :value="car$.Progress"
-      class="progress-bar w-full"
+      class="carousel-timer-progress-indicator"
     />
     <transition-group name="list" tag="div" class="mx-5">
       <component
@@ -28,22 +28,29 @@ const car$ = useCarouselState();
   //Note: Row 1 is the carousel timer
   grid-template-rows: auto 1fr;
 }
-.progress-bar::-webkit-slider-thumb {
-  @apply bg-teal-800;
+.carousel-item {
+  @apply absolute w-full max-w-4xl m-0;
+  width: 100%;
+  transform: translateX(-15px);
+}
+
+// carousel-timer-progress-indicator (created from slider input)...
+.carousel-timer-progress-indicator::-webkit-slider-thumb {
+  @apply bg-gray-500;
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   width: 3em; /* Set a specific slider handle width */
   height: 0.25em; /* Slider handle height */
 }
 input[type="range"]::-moz-range-thumb {
-  @apply bg-teal-800;
+  @apply bg-gray-500;
   height: 0.25em; /* Slider handle height */
   width: 3em;
   outline: none;
   border: none;
   appearance: none;
 }
-.progress-bar {
+.carousel-timer-progress-indicator {
   -webkit-appearance: none;
   width: 100%;
   height: 0.25em;
@@ -52,12 +59,7 @@ input[type="range"]::-moz-range-thumb {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
-.carousel-item {
-  @apply absolute w-full max-w-4xl m-0;
-  width: 100%;
-  transform: translateX(-15px);
-}
+// ...carousel-timer-progress-indicator
 
 // Transitions
 .list-enter-active {

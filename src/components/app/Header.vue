@@ -20,7 +20,7 @@ header {
   left: 0;
   z-index: 2;
   background-color: var(--background-color);
-  border-bottom: 1px darkslategrey solid;
+  border-bottom: 1px theme("colors.gray.500") solid;
 }
 .header-wrapper {
   @apply w-full max-w-7xl grid 

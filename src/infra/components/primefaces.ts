@@ -23,7 +23,7 @@ import Divider from "primevue/divider";
 
 // Ultimately to be registered in main.ts for global access.
 export default [
-  // { component: ProgressBar, name: "p-progress-bar" },
+  // { component: ProgressBar, name: "p-carousel-timer-progress-indicator" },
   // { component: Button, name: "p-button" },
   // { component: Calendar, name: "p-calendar" },
   // { component: Card, name: "p-card" },
@@ -41,7 +41,7 @@ export default [
   // { component: InputText, name: "p-input-text" },
   // { component: MultiSelect, name: "p-multi-select" },
   // { component: Panel, name: "p-panel" },
-  // { component: ProgressBar, name: "p-progress-bar" },
+  // { component: ProgressBar, name: "p-carousel-timer-progress-indicator" },
   // { component: ProgressSpinner, name: "p-progress-spinner" },
   // { component: RadioButton, name: "p-radio-button" },
   // { component: ScrollPanel, name: "p-scroll-panel" },
