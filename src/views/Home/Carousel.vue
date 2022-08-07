@@ -25,6 +25,7 @@ const car$ = useCarouselState();
 <style scoped lang="scss">
 .carousel-wrapper {
   @apply grid grid-rows-2 w-full overflow-hidden;
+  //Note: Row 1 is the carousel timer
   grid-template-rows: auto 1fr;
 }
 .progress-bar::-webkit-slider-thumb {

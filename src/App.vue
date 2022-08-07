@@ -25,19 +25,19 @@ import Content from "./components/app/Content.vue";
 import Header from "./components/app/Header.vue";
 
 //Tailwind Cheat sheet: { sm: "300px", md: "768px", lg: "976px", xl: "1440px" }
-let isMobile = ref(window.innerWidth < 767.5);
-let mobileClass = ref(isMobile.value ? "px-7" : "");
-const onResize = (e: Event) => {
-  isMobile.value = window.innerWidth < 767.5;
-  mobileClass.value = isMobile.value ? "px-7" : "";
-};
+// let isMobile = ref(window.innerWidth < 767.5);
+// let mobileClass = ref(isMobile.value ? "px-7" : "");
+// const onResize = (e: Event) => {
+//   isMobile.value = window.innerWidth < 767.5;
+//   mobileClass.value = isMobile.value ? "px-7" : "";
+// };
 
-onMounted(() => {
-  window.addEventListener("resize", onResize);
-});
-onUnmounted(() => {
-  window.removeEventListener("resize", onResize);
-});
+// onMounted(() => {
+//   window.addEventListener("resize", onResize);
+// });
+// onUnmounted(() => {
+//   window.removeEventListener("resize", onResize);
+// });
 // function handleScroll() {
 //   app.IsScrolled = window.scrollY > 0;
 // }
@@ -49,9 +49,10 @@ onUnmounted(() => {
 }
 .layout-wrapper {
   @apply grid grid-rows-2;
-  grid-template-rows: 3em 1fr;
+  //Note: Row 1 is the header height
+  grid-template-rows: 2.25em 1fr;
   @media (max-width: 500px) {
-    grid-template-rows: 6em 1fr;
+    grid-template-rows: 4.5em 1fr;
   }
 }
 .header-buffer {
