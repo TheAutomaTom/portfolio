@@ -1,14 +1,14 @@
 <template>
-  <div class="w-full absolute">
+  <div class="w-full max-w-4xl">
     <!-- Hero -->
-    <span class="title-chip" style="top: 3%; background-color: crimson"
-      >Date Engineering</span
-    >
-    <img
-      class="w-full"
-      src="../../../assets/imgs/3PA_logo_sm.png"
-      alt="Third Party Animal"
-    />
+    <div class="hero-overlay">
+      <span class="title-chip bg-red-800">Data Engineering</span>
+      <img
+        class="carousel-hero"
+        src="../../../assets/imgs/3PA_logo_sm.jpg"
+        alt="Third Party Animal"
+      />
+    </div>
 
     <!-- Content -->
     <div class="carousel-info-wrapper">
@@ -46,11 +46,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-//
-</script>
 <script lang="ts">
 export default { name: "Carousel_3PA" };
 </script>
-<style scoped lang="scss"></style>

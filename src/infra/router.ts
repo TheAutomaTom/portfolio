@@ -1,16 +1,21 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "../views/Home.vue";
-import Test from "../views/Test.vue";
+import TestCarousel from "../views/Test_Layouts/TestCarousel.vue";
+import Test from "../views/Test_Layouts/Test.vue";
 
 export const routes = [
   {
     path: "/",
     component: Home,
   },
-  {
-    path: "/Test",
-    component: Test,
-  },
+  // {
+  //   path: "/TestCarousel",
+  //   component: TestCarousel,
+  // },
+  // {
+  //   path: "/Test",
+  //   component: Test,
+  // },
   {
     path: "/ThePerfectNumberInput",
     name: "ThePerfectNumberInput",

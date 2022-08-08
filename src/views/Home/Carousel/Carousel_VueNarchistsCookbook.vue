@@ -1,14 +1,14 @@
 <template>
-  <div class="w-full absolute">
+  <div class="w-full max-w-4xl">
     <!-- Hero -->
-    <span class="title-chip" style="background-color: darkslateblue"
-      >Front-End User Interfaces</span
-    >
-    <img
-      class="w-full"
-      src="../../../assets/imgs/Vue_Logo.png"
-      alt="Front-End User Interfaces"
-    />
+    <div class="hero-overlay">
+      <span class="title-chip bg-violet-900"> Front-End User Interfaces </span>
+      <img
+        class="carousel-hero"
+        src="../../../assets/imgs/Vue_Logo.png"
+        alt="Front-End User Interfaces"
+      />
+    </div>
 
     <!-- Content -->
     <div class="carousel-info-wrapper">
@@ -57,11 +57,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-//
-</script>
 <script lang="ts">
 export default { name: "Carousel_3PA" };
 </script>
-<style scoped lang="scss"></style>

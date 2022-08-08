@@ -3,7 +3,7 @@
 import Carousel_3PA from "../../views/Home/Carousel/Carousel_3PA.vue";
 import Carousel_LGRM from "../../views/Home/Carousel/Carousel_LGRM.vue";
 import Carousel_VuenarchistsCookbook from "../../views/Home/Carousel/Carousel_VuenarchistsCookbook.vue";
-import Carousel_Animation from "../..//views/Home/Carousel/Carousel_Animation.vue";
+import Carousel_Animation from "../../views/Home/Carousel/Carousel_Animation.vue";
 
 export default [
   // Note: This "name" must match our api's VueComponents' "name"

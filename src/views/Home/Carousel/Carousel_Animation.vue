@@ -1,17 +1,19 @@
 <template>
-  <div class="absolute">
+  <div class="w-full max-w-4xl">
     <!-- Hero -->
-    <span class="title-chip bg-violet-900">Fun Stuff</span>
-    <img
-      class="w-full max-w-fit"
-      src="../../../assets/imgs/Animation_card.png"
-      alt="Animation"
-    />
+    <div class="hero-overlay">
+      <span class="title-chip bg-violet-900">Fun Stuff</span>
+      <img
+        class="carousel-hero"
+        src="../../../assets/imgs/Animation_card.png"
+        alt="Animation"
+      />
+    </div>
 
     <!-- Content -->
     <div class="carousel-info-wrapper">
       <!-- Title -->
-      <h1>Animation &amp; 3D Modelling</h1>
+      <h1>Animation &amp; 3D&nbsp;Modelling</h1>
 
       <!-- Description -->
       <div class="mb-3">

@@ -75,39 +75,35 @@ h6 {
   @apply text-sm;
   font-family: var(--font-title);
 }
-//= ANCHORS ======================================//
 // a { ... }
 a:hover {
   color: var(--primary-color);
   @apply underline;
 }
 
-//= PANEL ========================================//
-.p-panel {
-  @apply py-1 w-full max-w-full;
-}
-
 //= CAROUSEL HERO ================================//
-.carousel-info-wrapper {
-  @apply absolute w-full px-9 mt-1;
+.carousel-hero {
+  display: block;
+}
+.hero-overlay {
+  @apply relative inline-block;
+}
+.hero-overlay:after {
+  @apply absolute inline-block w-full h-full;
+  content: "";
+  left: 0;
+  top: 0;
   background: linear-gradient(
     0deg,
-    rgba(36, 36, 36, 0.95) 80%,
-    rgba(36, 36, 36, 0.8) 90%,
-    rgba(36, 36, 36, 0) 100%
+    rgba(36, 36, 36, 0.9) 0%,
+    rgba(36, 36, 36, 0.8) 5%,
+    rgba(36, 36, 36, 0.1) 12%,
+    rgba(0, 0, 0, 0) 100%
   );
-  @media (min-width: 600px) {
-    @apply mt-10  py-5;
-    bottom: -25%;
-  }
-  // @media (max-width: 500px) {  }
-  // @media (max-width: 500px) {  }
-  // @media (max-width: 500px) {  }
-  // @media (max-width: 500px) {  }
-  //   bottom: 50%;
-  // }
 }
-
+.carousel-info-wrapper {
+  @apply w-full px-9 z-10;
+}
 .carousel-footer-wrapper {
   @apply flex flex-wrap items-center;
   vertical-align: middle;
@@ -124,84 +120,23 @@ a:hover {
     @apply w-full justify-center;
   }
 }
-
 //= CHIPS ========================================//
-
 .chip {
-  @apply rounded-full px-3 mx-1 my-2;
+  @apply rounded-full px-3 mx-1 my-2 font-bold;
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
 }
-
 .title-chip {
   @extend .chip;
-  @apply absolute font-bold;
+  @apply absolute;
   font-family: var(--font-title);
   top: 0.5em;
   left: 0.75em;
-  border-bottom: 1px black solid;
-  border-left: 1px black solid;
-  transform: rotate(-7deg);
+  transform: rotate(-2deg);
 }
-
 .tag-chip {
   @extend .chip;
-  @apply font-bold;
   font-family: monospace;
   color: var(--primary-color-text);
   background-color: var(--primary-color);
 }
-/*
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

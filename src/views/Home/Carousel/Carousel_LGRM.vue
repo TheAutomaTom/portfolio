@@ -1,16 +1,19 @@
 <template>
-  <div class="w-full absolute">
+  <div class="w-full max-w-4xl">
     <!-- Hero -->
-    <span
-      class="title-chip bg-sky-900"
-      style="top: 37%; transform: rotate(0deg)"
-      >Android &amp; iOS&nbsp;Apps</span
-    >
-    <img
-      class="w-full"
-      src="../../../assets/imgs/LGRM_card.png"
-      alt="Mobile apps"
-    />
+    <div class="hero-overlay">
+      <span
+        class="title-chip bg-sky-900"
+        style="top: 37%; transform: rotate(0deg)"
+      >
+        Android &amp; iOS&nbsp;Apps
+      </span>
+      <img
+        class="carousel-hero"
+        src="../../../assets/imgs/LGRM_card.png"
+        alt="Mobile apps"
+      />
+    </div>
 
     <!-- Content -->
     <div class="carousel-info-wrapper">
@@ -50,11 +53,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-//
-</script>
 <script lang="ts">
 export default { name: "Carousel_LGRM" };
 </script>
-<style scoped lang="scss"></style>

@@ -1,22 +1,20 @@
 import { ref, markRaw, nextTick, computed } from "vue";
 import { defineStore } from "pinia";
-// import { useAppState } from "./AppState";
 import { DynamicComponent } from "../models/dynamic-components";
 
 export const useCarouselState = defineStore("CarouselState", () => {
-  // const app$ = useAppState();
   const Renderables = markRaw([
     {
       id: "Carousel_3PA",
       name: "Carousel_3PA",
     },
     {
-      id: "Carousel_VuenarchistsCookbook",
-      name: "Carousel_VuenarchistsCookbook",
-    },
-    {
       id: "Carousel_LGRM",
       name: "Carousel_LGRM",
+    },
+    {
+      id: "Carousel_VuenarchistsCookbook",
+      name: "Carousel_VuenarchistsCookbook",
     },
     {
       id: "Carousel_Animation",

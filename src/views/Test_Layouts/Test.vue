@@ -6,8 +6,8 @@
     <div class="col-center-bottom bg-green-500">
       <img
         class="w-full max-w-fit"
-        src="../assets/imgs/Animation_card.png"
-        alt="Animation"
+        src="../../assets/imgs/Animation_card.png"
+        alt="Test"
       />
     </div>
 
