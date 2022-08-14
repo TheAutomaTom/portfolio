@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <!-- Nav Left -->
-    <div class="nav-button-l bg-orange-300">&lt;</div>
+    <div @click="car$.Skip('Left')" class="nav-button-l">&lt;</div>
 
     <!-- Timer  -->
 
@@ -15,7 +15,6 @@
     />
 
     <!-- Content -->
-    <!-- <div class="col-center-bottom"> -->
     <transition-group name="list" tag="div" class="col-center-bottom">
       <component
         :is="car$.Renderables[car$.IndexToRender].name"
@@ -24,14 +23,18 @@
     </transition-group>
 
     <!-- Nav Right -->
-    <div class="nav-button-r bg-blue-400">&gt;</div>
+    <div @click="car$.Skip('Right')" class="nav-button-r">&gt;</div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+// import { ref } from "vue";
 import { useCarouselState } from "../../state/CarouselState";
 const car$ = useCarouselState();
+
+const test = (x: string) => {
+  console.log(x);
+};
 </script>
 <style scoped lang="scss">
 .carousel {

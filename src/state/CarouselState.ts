@@ -30,13 +30,7 @@ export const useCarouselState = defineStore("CarouselState", () => {
       timer.value = timer.value - 1;
     } else {
       timer.value = duration;
-      if (IndexToRender.value == Renderables.length - 1) {
-        nextTick();
-        IndexToRender.value = 0;
-      } else {
-        nextTick();
-        IndexToRender.value++;
-      }
+      incrementCarousel("Right");
     }
   }, evaluationInterval);
 
@@ -46,9 +40,46 @@ export const useCarouselState = defineStore("CarouselState", () => {
   });
 
   const IndexToRender = ref(0);
+  const Skip = (command: string) => {
+    switch (command) {
+      case "Right":
+        incrementCarousel("Right");
+        break;
+      default: //case "Left":
+        incrementCarousel("Left");
+        break;
+    }
+  };
+
+  const incrementCarousel = (command: string) => {
+    switch (command) {
+      case "Right":
+        if (IndexToRender.value == Renderables.length - 1) {
+          nextTick();
+          IndexToRender.value = 0;
+        } else {
+          nextTick();
+          IndexToRender.value++;
+        }
+        break;
+
+      default: //case "Right":
+        if (IndexToRender.value == 0) {
+          nextTick();
+          IndexToRender.value = Renderables.length - 1;
+        } else {
+          nextTick();
+          IndexToRender.value--;
+        }
+
+        break;
+    }
+  };
+
   return {
     Progress,
     Renderables,
     IndexToRender,
+    Skip,
   };
 });
