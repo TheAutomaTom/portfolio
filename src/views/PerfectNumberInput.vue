@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6">
+  <div class="m-6">
     <h3 class="mb-1">Formatted Number Inputs</h3>
     <p class="mb-1" style="text-indent: 1em">
       <em>

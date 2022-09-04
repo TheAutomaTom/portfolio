@@ -126,8 +126,8 @@ input[type="range"]::-moz-range-thumb {
 // Transitions
 // entering...
 .list-enter-from {
-  opacity: 0.1;
-  transform: translateX(5px);
+  opacity: 0.3;
+  transform: translateX(-15px);
   z-index: 100;
 }
 .list-enter-active {
@@ -140,16 +140,16 @@ input[type="range"]::-moz-range-thumb {
 // leaving...
 .list-leave-from {
   @apply absolute max-w-xl;
+  opacity: 0;
+  z-index: -100;
 }
 
 .list-leave-active {
   transition: all 0.8s ease-in;
 }
 .list-leave-to {
-  @apply absolute max-w-md;
+  @apply absolute max-w-xl;
   opacity: 0;
-  transform: translateX(-200px), translateY(1200px);
-  z-index: -100;
-  background: linear-gradient(red);
+  // transform: translateX(-200px), translateY(1200px);
 }
 </style>
