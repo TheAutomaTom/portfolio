@@ -2,7 +2,7 @@
   <header>
     <div class="header-wrapper">
       <div class="header-left">
-        <h1>Thomas Grossi</h1>
+        <h1 style="font-variant: small-caps">Thomas Grossi</h1>
       </div>
       <div class="header-right">
         <h4>Design&nbsp;&amp;&nbsp;Execution as&nbsp;Fine&nbsp;Art</h4>

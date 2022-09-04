@@ -282,5 +282,6 @@ onMounted(() => {
 @use "../infra/styles.scss";
 input {
   @extend .p-component, .p-input, .p-inputtext, .p-filled;
+  @apply px-2 py-1;
 }
 </style>
