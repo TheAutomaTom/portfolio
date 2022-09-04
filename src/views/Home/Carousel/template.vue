@@ -24,7 +24,7 @@
         <p>
           <!-- xxxxxxxxxx_Description_xxxxxxxxxx -->
         </p>
-        <p-hr />
+        <hr />
       </div>
 
       <div class="carousel-footer-wrapper">

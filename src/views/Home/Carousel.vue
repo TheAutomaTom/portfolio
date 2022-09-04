@@ -1,7 +1,13 @@
 <template>
   <div class="carousel">
     <!-- Nav Left -->
-    <div @click="car$.Skip('Left')" class="nav-button-l">&lt;</div>
+    <div @click="car$.Skip('Left')" class="nav-button-l">
+      <svg width="300" height="200" class="nav-button-icon">
+        <!-- <polygon points="0,0 0,100 20,50 " style="fill: white" /> -->
+        <polygon points="0,50, 20,100 20,0 " style="fill: white" />
+        &lt;
+      </svg>
+    </div>
 
     <!-- Timer  -->
 
@@ -23,7 +29,12 @@
     </transition-group>
 
     <!-- Nav Right -->
-    <div @click="car$.Skip('Right')" class="nav-button-r">&gt;</div>
+    <div @click="car$.Skip('Right')" class="nav-button-r">
+      <svg width="300" height="200" class="nav-button-icon">
+        <polygon points="0,0 0,100 20,50" style="fill: white" />
+        &gt;
+      </svg>
+    </div>
   </div>
 </template>
 
@@ -44,25 +55,46 @@ const test = (x: string) => {
 }
 
 .nav-button {
-  width: 5em;
+  @apply flex;
   grid-row: 2;
+  width: 5em;
+  opacity: 0%;
   z-index: 1000;
-  opacity: 30%;
-  @media (max-width: 800px) {
-    grid-row: 2;
-  }
 }
+
+.nav-button:hover {
+  opacity: 30%;
+}
+
+.nav-button-icon {
+  display: block;
+  margin-top: 12em;
+  margin-bottom: auto;
+  margin-left: 1.8em;
+}
+
+svg.nav-button-icon {
+}
+
 .nav-button-l {
   @extend .nav-button;
   grid-column: 1;
-  // @media (max-width: 800px) {
-  // }
+  background: linear-gradient(
+    340deg,
+    rgba(2, 0, 36, 0) 30%,
+    rgba(0, 0, 0, 0.8169468470982143) 100%
+  );
 }
+
 .nav-button-r {
   @extend .nav-button;
   grid-column: 3;
-  // @media (max-width: 800px) {
-  // }
+
+  background: linear-gradient(
+    20deg,
+    rgba(2, 0, 36, 0) 30%,
+    rgba(0, 0, 0, 0.8169468470982143) 100%
+  );
 }
 
 .col-center-top {
@@ -127,11 +159,11 @@ input[type="range"]::-moz-range-thumb {
 // entering...
 .list-enter-from {
   opacity: 0.3;
-  transform: translateX(-15px);
+  transform: translateX(12px);
   z-index: 100;
 }
 .list-enter-active {
-  transition: all 0.8s ease-out;
+  transition: all 0.6s ease-out;
 }
 .list-enter-to {
   opacity: 1;
@@ -145,7 +177,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .list-leave-active {
-  transition: all 0.8s ease-in;
+  transition: all 0.6s ease-in;
 }
 .list-leave-to {
   @apply absolute max-w-xl;

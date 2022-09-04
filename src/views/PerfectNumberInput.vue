@@ -1,6 +1,6 @@
 <template>
   <div class="m-6">
-    <div class="intro">
+    <div class="card">
       <h3 class="mb-1" style="font-variant: small-caps">
         Formatted Number Inputs
       </h3>
@@ -9,11 +9,11 @@
         real-time user inputs.
       </p>
       <p class="mb-5" style="text-indent: 1em">
-        &nbsp;&nbsp;The inputs below are native html. You can see their backing
-        data value, labelled "Model." I've added Prime Vue's floating labels
-        because, not only do they look cool, but it took a little extra effort
-        to get them working properly.
+        &nbsp;&nbsp;The inputs below are native html. I've added Prime Vue's
+        floating labels because, not only do they look cool, but it took a
+        little extra effort to get them working properly.
       </p>
+      <hr />
       <span class="text-zinc-400 text-xs"
         ><em>All inputs below allow maximum values of 999,999.00</em>
       </span>
@@ -75,7 +75,7 @@
               id="numberModelNoNull"
               :max="999999"
             />
-            <label for="numberModelNoNull">Empty becomes zero on blur </label>
+            <label for="numberModelNoNull">Empty zeros on blur </label>
           </span>
         </div>
         <!------------------------------------------------------------------------>
@@ -96,6 +96,12 @@
       </div>
       <!------------------------------------------------------------------------>
     </div>
+
+    <router-link :to="'/'"
+      ><h4 class="text-amber-800" style="font-variant: small-caps">
+        <i class="pi px-1 pi-caret-left"></i>Home
+      </h4>
+    </router-link>
     <!-- Feature detail -->
     <!-- <div class="intro">
       <h3 class="mb-1" style="font-variant: small-caps">Diagnostic Mode</h3>
@@ -138,10 +144,7 @@ const numberModel3 = ref(undefined);
 .card {
   @apply px-3 pt-1 pb-2;
 }
-.intro {
-  @extend .card;
-  @apply border rounded border-amber-900;
-}
+
 .row-wrapper {
   @apply flex flex-grow flex-wrap justify-center;
   //@apply flex flex-wrap m-5;

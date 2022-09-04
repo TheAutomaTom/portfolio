@@ -80,6 +80,11 @@ a:hover {
   color: var(--primary-color);
   @apply underline;
 }
+hr {
+  @apply border-amber-900 border;
+  border-width: 1px;
+  border-top: 0;
+}
 
 //= CAROUSEL HERO ================================//
 .carousel-hero {

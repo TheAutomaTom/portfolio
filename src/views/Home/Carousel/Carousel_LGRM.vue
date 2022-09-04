@@ -23,10 +23,12 @@
       <!-- Description -->
       <div class="mb-3">
         <p>
-          Xamarin.Forms mobile app released on Android and iOS. Useful recipe
-          maker for my friend's "Optavia" health-coaching program.
+          <em class="text-neutral-400">
+            Xamarin.Forms mobile app released on Android and iOS. Useful recipe
+            maker for my friend's "Optavia" health-coaching program.</em
+          >
         </p>
-        <p-hr />
+        <hr />
       </div>
 
       <div class="carousel-footer-wrapper">
@@ -50,6 +52,7 @@
       </div>
 
       <!--  -->
+      <hr class="mt-4" />
     </div>
   </div>
 </template>

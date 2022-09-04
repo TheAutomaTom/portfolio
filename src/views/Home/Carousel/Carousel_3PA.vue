@@ -18,10 +18,12 @@
       <!-- Description -->
       <div class="mb-3">
         <p>
-          CSV cruncher focussed on extracting meaningful assertions from public
-          voter records.
+          <em class="text-neutral-400">
+            CSV cruncher focussed on extracting meaningful assertions from
+            public voter records.
+          </em>
         </p>
-        <p-hr />
+        <hr />
       </div>
 
       <div class="carousel-footer-wrapper">
@@ -43,6 +45,7 @@
       </div>
 
       <!--  -->
+      <hr class="mt-4" />
     </div>
   </div>
 </template>
