@@ -4,9 +4,11 @@ import { defineStore } from "pinia";
 export const useAppState = defineStore("AppState", () => {
   const IsLoading = ref(true);
   const IsScrolled = ref(false);
+  const IsModal = ref(false);
 
   return {
     IsLoading,
     IsScrolled,
+    IsModal,
   };
 });
