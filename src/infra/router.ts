@@ -12,9 +12,9 @@ export const routes = [
     component: () => import("../views/DemoNumbersInput.vue"),
   },
   {
-    path: "/DemoInputFocus",
-    name: "DemoInputFocus",
-    component: () => import("../views/DemoInputFocus.vue"),
+    path: "/DemoFormFocus",
+    name: "DemoFormFocus",
+    component: () => import("../views/DemoFormFocus.vue"),
   },
   {
     path: "/:pathMatch(.*)*",

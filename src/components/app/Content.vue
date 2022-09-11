@@ -1,6 +1,6 @@
 <template>
   <div>
-    <dialog-mask v-if="focus$.IsActive" class="fixed flex w-full"></dialog-mask>
+    <form-focus-dialog v-if="focus$.IsActive" class="fixed flex w-full"></form-focus-dialog>
     <slot name="content"></slot>
   </div>
 </template>
