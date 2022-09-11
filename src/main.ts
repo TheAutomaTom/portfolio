@@ -16,12 +16,14 @@ standards.forEach((element) => {
   _app.component(element.name, element.component);
 });
 
-import PrimeVue from "primevue/config";
-import primes from "./infra/components/primefaces";
-_app.use(PrimeVue);
-primes.forEach((element) => {
-  _app.component(element.name, element.component);
-});
+// - All Prime components have been removed.  
+// - Only styling and floating label classes are in use.
+// import PrimeVue from "primevue/config";
+// import primes from "./infra/components/primefaces";
+// _app.use(PrimeVue);
+// primes.forEach((element) => {
+//   _app.component(element.name, element.component);
+// });
 
 import dynamics from "./infra/components/dynamics";
 dynamics.forEach((element) => {

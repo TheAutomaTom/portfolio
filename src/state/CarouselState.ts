@@ -1,6 +1,6 @@
 import { ref, markRaw, nextTick, computed } from "vue";
 import { defineStore } from "pinia";
-import { DynamicComponent } from "../models/dynamic-components";
+import type {CalledComponent}  from "../models/CalledComponents";
 
 export const useCarouselState = defineStore("CarouselState", () => {
   const Renderables = markRaw([
@@ -20,7 +20,7 @@ export const useCarouselState = defineStore("CarouselState", () => {
       id: "Carousel_Animation",
       name: "Carousel_Animation",
     },
-  ] as Array<DynamicComponent>);
+  ] as Array<CalledComponent>);
 
   let duration = 190;
   let evaluationInterval = 35;
