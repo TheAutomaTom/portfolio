@@ -17,17 +17,12 @@
 
       <!-- Description -->
       <div class="mb-3">
-        <p>Specialized front-end solutions in Vue.js 3</p>
-        <p-hr />
-        <h2 class="ml-3 mt-1">Custom Component Demos:</h2>
-        <p class="ml-4 mt-1">
-          <router-link :to="'/ThePerfectNumberInput'"
-            ><h4>
-              <i class="pi px-1 pi-briefcase"></i>"The Perfect Number Input"
-            </h4></router-link
+        <p>
+          <em class="text-neutral-400"
+            >Specialized front-end solutions in Vue.js 3</em
           >
         </p>
-        <p-hr />
+        <hr />
       </div>
 
       <div class="carousel-footer-wrapper">
@@ -54,6 +49,7 @@
       </div>
 
       <!--  -->
+      <hr class="mt-4" />
     </div>
   </div>
 </template>

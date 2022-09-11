@@ -18,9 +18,11 @@
       <!-- Description -->
       <div class="mb-3">
         <p>
-          All preparation for that ground-breaking independent game release.
+          <em class="text-neutral-400">
+            All preparation for that ground-breaking independent game release.
+          </em>
         </p>
-        <p-hr />
+        <hr />
       </div>
 
       <div class="carousel-footer-wrapper">
@@ -41,6 +43,7 @@
       </div>
 
       <!--  -->
+      <hr class="mt-4" />
     </div>
   </div>
 </template>
