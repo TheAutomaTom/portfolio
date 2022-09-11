@@ -5,7 +5,7 @@
 // import Column from "primevue/column";
 // import DataTable from "primevue/datatable";
 // import Dialog from "primevue/dialog";
-import Divider from "primevue/divider";
+// import Divider from "primevue/divider";
 // import Dropdown from "primevue/dropdown";
 // import FileUpload from "primevue/fileupload";
 // import Galleria from "primevue/galleria";
@@ -31,7 +31,7 @@ export default [
   // { component: Column, name: "p-column" },
   // { component: DataTable, name: "p-data-table" },
   // { component: Dialog, name: "p-dialog" },
-  { component: Divider, name: "p-hr" },
+  // { component: Divider, name: "p-hr" },
   // { component: Dropdown, name: "p-dropdown" },
   // { component: FileUpload, name: "p-file-upload" },
   // { component: Galleria, name: "p-galleria" },
