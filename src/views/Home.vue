@@ -13,7 +13,7 @@
         </span>
       </div>
       <!-- Link 2 -->
-      <router-link :to="'/DemoInputFocus'"
+      <router-link :to="'/DemoFormFocus'"
         ><h4><i class="pi px-1 pi-briefcase"></i>"The Best Mobile Forms"</h4>
       </router-link>
       <div class="ml-6">

@@ -23,6 +23,7 @@
 import { onMounted, onUnmounted, ref } from "vue";
 import Content from "./components/app/Content.vue";
 import Header from "./components/app/Header.vue";
+import DialogMask from "./components/app/DialogMask.vue";
 
 //Tailwind Cheat sheet: { sm: "300px", md: "768px", lg: "976px", xl: "1440px" }
 // let isMobile = ref(window.innerWidth < 767.5);
@@ -67,7 +68,7 @@ $footer-height: 2em;
   padding-bottom: $footer-height;
 }
 .content {
-  @apply w-full max-w-4xl flex;
+  @apply w-full h-full max-w-4xl flex;
 }
 .footer-wrapper {
   position: absolute;

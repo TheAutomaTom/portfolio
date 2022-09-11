@@ -14,8 +14,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useInputFocusState } from "../../state/InputFocusState";
-const focus$ = useInputFocusState();
+import { useFormFocusState } from "../../state/FormFocusState";
+const focus$ = useFormFocusState();
 
 var dummy1 = ref("");
 var dummy2 = ref("");
