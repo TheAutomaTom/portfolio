@@ -1,22 +1,15 @@
 <template>
-    <!-- STRING INPUT -->
+  <div class="flex items-center" >
+
+    <label :for="_$.Question.questionId">
+      _$.Question.questionText
+    </label>
+    <input
+      :id="_$.Question.questionId"
+      v-model="_$.Question.answer"
+    />
     
-    <div class="flex items-center" >
-      <!-- v-if="_$.spec?.kind === ElementKind.StringInput" -->
-
-      <span class="p-float-label">
-        <input
-          :id="_$.id"
-          v-model="_$.value"
-        />
-              
-        <label :for="_$.id">
-          <!-- ((_$ as unknown) as IStringInput).label -->
-          {{_$.spec?.label}}
-        </label>
-      </span>
-    </div>
-
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -3,33 +3,44 @@ export enum ElementKind {
   // Checkboxes = "Checkboxes",
   // DatePicker = "DatePicker",
   // ListBox = "ListBox",
-  NumbersInput =  "NumbersInput",
-  StringInput =   "StringInput",
+  InputNumber =  "InputNumber",
+  InputString =   "InputString",
 }
 
-export interface IFocussed {  
+export interface IFocussed {
+  //=From IVueComponent...
   id: string;
-  spec?:{
-    kind: ElementKind;
-    label?: string;
-  }
-  value?: string| number| boolean| undefined;
+  name: string;
+  // entityId: string;
+  parameters: string;
+
+  //=From IQuestionComponent...
+  Question: IQuestion;
+
 }
 
-// //== Strings
-// export interface IStringInput extends Omit<IFocussed, 'value'> {
-//   // label?: string;
-//   value: string;
-// }
-// export interface INullableStringInput extends Omit<IStringInput, 'value'> {
-//   value?: string;
-// }
+export interface IQuestion {
+  questionId: string;
+  // questionGuid: string;
+  // questionScope: QuestionScope;
+  questionText: string;
+  // successMessage: string;
+  // failedMessage: string;
+  // dataType: string;
+  controlType: ControlType;
+  answer: string;
+  // placeholder?: string;
+  // messages: Array<string>;
+  // availableAnswers: Array<string>;
+  // mask: string;
+}
 
-// //== Numbers 
-// export interface INumberInput extends Omit<IFocussed, 'value'> {
-//   label?: string;
-//   value: number;
-// }
-// export interface INullableNumberInput extends Omit<INumberInput, 'value'> {
-//   value?: number;
-// }
+export enum ControlType {
+  InputString = "InputString",
+
+  // Dropdown = "Dropdown",
+  // ImageWithHeadline = "  ImageWithHeadline",
+  // NumbersInput = "  NumbersInput",
+  // DatePicker = "  DatePicker",
+  // Checkboxes = "  Checkboxes",
+}
