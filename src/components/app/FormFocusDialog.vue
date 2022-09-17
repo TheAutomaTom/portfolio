@@ -1,20 +1,19 @@
 This is is the dynamic interview's user-facing display
 <template>
   <div class="dialog-wrapper">
-    <button @click="focus$.IsActive = false">
-      <i class="pi px-1 pi-times-circle" />
-    </button>
-
-    <div v-for="el in focus$.ToRender">
-      <li>
+    <div class="dialog-feature-wrapper">
+      
+      <div v-for="el in focus$.ToRender">
         <component
-          :is="el.name"
-          :key="el.id"
-          :parameters="el.parameters"
+        :is="el.name"
+        :key="el.id"
+        :parameters="el.parameters"
         />
-      </li>
-    </div>
-
+      </div>
+      <button @click="focus$.IsActive = false">
+        <i class="pi px-1 pi-times-circle" />
+      </button>
+  </div>
  </div>
 </template>
 
@@ -28,12 +27,12 @@ const focus$ = useFormFocusModule();
 </script>
 <style lang="scss">
 .dialog-wrapper {
-  @apply bg-teal-600 w-full max-w-4xl h-full flex justify-around;
-  background-color: rgba(0, 0, 0, 0.6);
+  @apply w-full max-w-4xl h-full flex justify-around;
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 20000;
 }
 .dialog-feature-wrapper {
-  @apply bg-teal-400;
+  background-color: rgba(0, 0, 0, 0.6);
   margin-top: auto;
   margin-bottom: auto;
 }

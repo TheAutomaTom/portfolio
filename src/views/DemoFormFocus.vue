@@ -30,14 +30,16 @@
               @focus="activateFocus({
                 id: 'idString',
                 name:ControlType.InputString.toString(),
-                parameters:'parameters',
-                Question:{
-                  questionId:'FirstNameQid',
-                  questionText:'FirstName',
-                  controlType: ControlType.InputString,
-                  answer:'Tommmy'
+                entityId:'entityId',
+                parameters:{ 
+                  Question:{
+                    questionId:'FirstNameQid',
+                    questionText:'FirstName',
+                    controlType: ControlType.InputString,
+                    answer:''
+                  }
                 }
-              } as IFocussed)"
+              } as VueComponent)"
             />
             <label for="input1">Name</label>
           </span>
@@ -58,11 +60,11 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useFormFocusModule } from "../state/FormFocusModule";
-import { IFocussed, ControlType } from "../models/FormFocusElements";
+import { VueComponent, ControlType } from "../models/FormFocusElements";
 const focus$ = useFormFocusModule();
 const input1 = ref("input-1-value");
 
-const activateFocus = (el: IFocussed ): void => {
+const activateFocus = (el: VueComponent ): void => {
   focus$.SetCurrentComponents([el]);
   focus$.Activate();
 };

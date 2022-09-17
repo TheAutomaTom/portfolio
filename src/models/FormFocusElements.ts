@@ -1,24 +1,25 @@
-export enum ElementKind {
-  // Billboard =  "Billboard",
-  // Checkboxes = "Checkboxes",
-  // DatePicker = "DatePicker",
-  // ListBox = "ListBox",
-  InputNumber =  "InputNumber",
-  InputString =   "InputString",
-}
-
-export interface IFocussed {
-  //=From IVueComponent...
+// for Controlling module's array...
+export type VueComponent = {
   id: string;
   name: string;
-  // entityId: string;
-  parameters: string;
+  entityId: string;
+  
+  //parameters: string;
+  parameters: IQuestionComponent;   
+};
 
-  //=From IQuestionComponent...
-  Question: IQuestion;
-
+// for Vue controls...
+export interface IVueComponent {
+  Id: string;
+  parametersType: ParametersType;
 }
-
+export enum ParametersType {
+  // ImageWithHeadline,
+  Question,
+}
+export interface IQuestionComponent extends IVueComponent {
+  Question: IQuestion;
+}
 export interface IQuestion {
   questionId: string;
   // questionGuid: string;
