@@ -23,10 +23,14 @@
           <span class="p-float-label">
             <input
               id="input1"
-              v-model="input1"
-              :class="getClasses(input1)"
-              @focus="activateModal()"
+              v-model="input1Model"
+              :class="hasFloatingLabel(input1Model)"
               :disabled="focus$.IsActive"
+              @focus="activateFocus({
+                  id:'input1',
+                  spec:{ kind:ElementKind.StringInput, label:'Name' },
+                  value:input1Model 
+                } as IFocussed )"
             />
             <label for="input1">Name</label>
           </span>
@@ -38,8 +42,13 @@
             <input
               v-model="input2"
               id="input2"
-              @focus="activateModal()"
               :disabled="focus$.IsActive"
+              @focus="activateFocus({
+                  id:'input2', 
+                  spec:{kind:ElementKind.StringInput, 
+                  label:'Favorite Color'}, 
+                  value:input2 
+                } as IFocussed )"
             />
             <label for="input2">Favorite Color</label>
           </span>
@@ -57,18 +66,22 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useFormFocusState } from "../state/FormFocusState";
-const focus$ = useFormFocusState();
+import { useFormFocusModule } from "../state/FormFocusModule";
+import { IFocussed, ElementKind } from "../models/FormFocusElements";
+const focus$ = useFormFocusModule();
 const dialogInput = ref("");
-const input1 = ref("word");
+const input1Model = ref("word");
 const input2 = ref("");
 
-const getClasses = (x: string): string => {
-  return x !== "" ? "p-filled" : "";
+const activateFocus = (el: IFocussed ): void => {
+  console.log("1. DemoFormFocus.ActivateFocus()");
+  console.log("2. DemoFormFocus.focus$.SetCurrentComponents([el])");
+  focus$.SetCurrentComponents([el]);
+  focus$.Activate();
 };
-const activateModal = (): void => {
-  focus$.IsActive = true;
-  console.warn("Word");
+
+const hasFloatingLabel = (x: string): string => {
+  return x !== "" ? "p-filled" : "";
 };
 </script>
 

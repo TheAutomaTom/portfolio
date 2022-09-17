@@ -1,24 +1,32 @@
+This is is the dynamic interview's user-facing display
 <template>
   <div class="dialog-wrapper">
-    <div class="dialog-feature-wrapper">
-      <label for="dummy1">First Name</label>
-      <input id="dummy1" v-model="dummy1" />
-    </div>
-    <div class="dialog-feature-wrapper">
-      <label for="dummy2">Whatever Name</label>
-      <input id="dummy2" v-model="dummy2" />
-    </div>
-    <button @click="focus$.IsActive = false">X</button>
-  </div>
+    <button @click="focus$.IsActive = false">
+      <i class="pi px-1 pi-times-circle" />
+    </button>
+    Word...
+    
+    <div v-for="el in focus$.ToRender">
+      <li>
+        <component
+          :is="DynamicTest"
+          
+        />
+      </li>
+    </div> 
+
+
+    ... word.
+ </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import { useFormFocusState } from "../../state/FormFocusState";
-const focus$ = useFormFocusState();
+  import { ref } from "vue";
+  import { useFormFocusModule } from "../../state/FormFocusModule";
+import InputString from "../dynamics/form_focus/InputString.vue";
+import DynamicTest from "../dynamics/form_focus/DynamicTest.vue";
+  const focus$ = useFormFocusModule();
 
-var dummy1 = ref("");
-var dummy2 = ref("");
 </script>
 <style lang="scss">
 .dialog-wrapper {

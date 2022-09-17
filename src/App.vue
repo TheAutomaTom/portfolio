@@ -5,7 +5,7 @@
     <Header />
     <div class="layout-wrapper">
       <div class="header-buffer" />
-      <!-- Content ------------------------------------------------------>
+      <!-- Content --------------------------------------------------->
       <div class="content-wrapper">
         <Content class="content">
           <template v-slot:content>
