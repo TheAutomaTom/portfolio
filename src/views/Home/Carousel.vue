@@ -43,9 +43,6 @@
 import { useCarouselState } from "../../state/CarouselState";
 const car$ = useCarouselState();
 
-const test = (x: string) => {
-  console.log(x);
-};
 </script>
 <style scoped lang="scss">
 .carousel {

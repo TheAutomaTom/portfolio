@@ -4,7 +4,7 @@
 
     <div class="w-full max-w-xl m-auto mt-6">
       <!-- Link 1 -->
-      <router-link :to="'/DemoNumbersInput'"
+      <router-link :to="'/FormattedNumbersInput'"
         ><h4><i class="pi px-1 pi-briefcase"></i>"The Perfect Number Input"</h4>
       </router-link>
       <div class="ml-6">
@@ -13,7 +13,7 @@
         </span>
       </div>
       <!-- Link 2 -->
-      <router-link :to="'/DemoFormFocus'"
+      <router-link :to="'/FocussedInputDemo'"
         ><h4><i class="pi px-1 pi-briefcase"></i>"The Best Mobile Forms"</h4>
       </router-link>
       <div class="ml-6">

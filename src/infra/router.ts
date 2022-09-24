@@ -7,14 +7,14 @@ export const routes = [
     component: Home,
   },
   {
-    path: "/DemoNumbersInput",
-    name: "DemoNumbersInput",
-    component: () => import("../views/DemoNumbersInput.vue"),
+    path: "/FormattedNumbersInput",
+    name: "FormattedNumbersInput",
+    component: () => import("../views/FormattedNumbersInput.vue"),
   },
   {
-    path: "/DemoFormFocus",
-    name: "DemoFormFocus",
-    component: () => import("../views/DemoFormFocus.vue"),
+    path: "/FocussedInputDemo",
+    name: "FocussedInputDemo",
+    component: () => import("../views/FocussedInputDemo.vue"),
   },
   {
     path: "/:pathMatch(.*)*",

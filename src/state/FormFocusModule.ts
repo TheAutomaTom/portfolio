@@ -12,7 +12,6 @@ export const useFormFocusModule = defineStore("FormFocusModule", () => {
   const SetCurrentComponents = (update: Array<VueComponent>) => {
     ToRender.length = 0;
     update.forEach(el => ToRender.push(el));
-    console.dir(ToRender);
   };
   
   return {
