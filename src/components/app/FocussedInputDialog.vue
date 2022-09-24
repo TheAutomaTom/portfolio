@@ -19,10 +19,10 @@ This is is the dynamic interview's user-facing display
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useFocussedInputModule } from "../../state/FocussedInputModule";
-import InputString from "../dynamics/form_focus/InputString.vue";
-import DynamicTest from "../dynamics/form_focus/DynamicTest.vue";
-const focus$ = useFocussedInputModule();
+import { useFocussedInputState } from "../../state/FocussedInputState";
+import InputString from "../dynamics/focusableInputs/InputString.vue";
+import DynamicTest from "../dynamics/focusableInputs/DynamicTest.vue";
+const focus$ = useFocussedInputState();
 
 </script>
 <style lang="scss">

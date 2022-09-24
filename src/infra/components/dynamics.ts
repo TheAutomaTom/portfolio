@@ -5,8 +5,8 @@ import Carousel_LGRM from "../../views/Home/Carousel/Carousel_LGRM.vue";
 import Carousel_VuenarchistsCookbook from "../../views/Home/Carousel/Carousel_VuenarchistsCookbook.vue";
 import Carousel_Animation from "../../views/Home/Carousel/Carousel_Animation.vue";
 
-import InputString from "../../components/dynamics/form_focus/InputString.vue";
-import DynamicTest from "../../components/dynamics/form_focus/DynamicTest.vue";
+import InputString from "../../components/dynamics/focusableInputs/InputString.vue";
+import DynamicTest from "../../components/dynamics/focusableInputs/DynamicTest.vue";
 
 export default [
   // Form Focus

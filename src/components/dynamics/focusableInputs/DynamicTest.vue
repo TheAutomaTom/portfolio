@@ -13,8 +13,7 @@
 
 <script setup lang="ts">
 import { ref, useAttrs } from "vue";
-import { useFocussedInputModule } from "../../../state/FocussedInputModule";
-import { IFocussed, ElementKind } from "../../../models/FocussedInputElements";
+import { useFocussedInputState } from "../../../state/FocussedInputState";
 </script>
 <script lang="ts">
 export default { name: "DynamicTest" };
