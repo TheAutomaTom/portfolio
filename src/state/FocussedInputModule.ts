@@ -1,8 +1,8 @@
 import { ref, markRaw } from "vue";
 import { defineStore } from "pinia";
-import { VueComponent } from "../models/FormFocusElements";
+import { VueComponent } from "../models/FocussedInputElements";
 
-export const useFormFocusModule = defineStore("FormFocusModule", () => {
+export const useFocussedInputModule = defineStore("FocussedInputModule", () => {
   const ToRender = markRaw([] as Array<VueComponent>);  
   const IsActive = ref(false);
   const Activate = ()=>{  

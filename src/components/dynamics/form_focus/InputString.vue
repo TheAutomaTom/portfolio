@@ -16,11 +16,11 @@
 
 <script setup lang="ts">
 import { ref, useAttrs } from "vue";
-import { useFormFocusModule } from "../../../state/FormFocusModule";
-import { IQuestionComponent, ControlType } from "../../../models/FormFocusElements";
+import { useFocussedInputModule } from "../../../state/FocussedInputModule";
+import { IQuestionComponent, ControlType } from "../../../models/FocussedInputElements";
 
 const emits = defineEmits(["register-nav-requirement"]);
-const focus$ = useFormFocusModule();
+const focus$ = useFocussedInputModule();
 const attrs = useAttrs();
 let _$ = attrs.parameters as IQuestionComponent;
 

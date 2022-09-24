@@ -5,6 +5,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useFormFocusModule } from "../../state/FormFocusModule";
-const focus$ = useFormFocusModule();
+import { useFocussedInputModule } from "../../state/FocussedInputModule";
+const focus$ = useFocussedInputModule();
 </script>

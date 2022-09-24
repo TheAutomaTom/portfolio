@@ -59,9 +59,9 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useFormFocusModule } from "../state/FormFocusModule";
-import { VueComponent, ControlType } from "../models/FormFocusElements";
-const focus$ = useFormFocusModule();
+import { useFocussedInputModule } from "../state/FocussedInputModule";
+import { VueComponent, ControlType } from "../models/FocussedInputElements";
+const focus$ = useFocussedInputModule();
 const input1 = ref("input-1-value");
 
 const activateFocus = (el: VueComponent ): void => {
