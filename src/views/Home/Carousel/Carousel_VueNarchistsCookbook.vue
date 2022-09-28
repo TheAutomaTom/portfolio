@@ -5,9 +5,10 @@
       <span class="title-chip bg-violet-900"> Front-End User Interfaces </span>
       <img
         class="carousel-hero"
-        src="../../../assets/imgs/Vue_Logo.png"
         alt="Front-End User Interfaces"
-      />
+        src="https://www.surrealitycheck.org/images/hero_vuenarchist.jpg"
+        />
+        <!-- src="../../../assets/imgs/Vue_Logo.png" -->
     </div>
 
     <!-- Content -->

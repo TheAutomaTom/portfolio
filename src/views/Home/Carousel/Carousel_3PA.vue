@@ -5,9 +5,10 @@
       <span class="title-chip bg-red-800">Data Engineering</span>
       <img
         class="carousel-hero"
-        src="../../../assets/imgs/3PA_logo_sm.jpg"
         alt="Third Party Animal"
-      />
+        src="https://www.surrealitycheck.org/images/hero_3pa.jpg"
+        />
+        <!-- src="../../../assets/imgs/3PA_logo_sm.jpg" -->
     </div>
 
     <!-- Content -->

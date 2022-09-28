@@ -5,10 +5,11 @@
       <span class="title-chip bg-violet-900">Fun Stuff</span>
       <img
         class="carousel-hero"
-        src="../../../assets/imgs/Animation_card.png"
         alt="Animation"
-      />
-    </div>
+        src="https://www.surrealitycheck.org/images/hero_animation.jpg"
+        />
+        <!-- src="../../../assets/imgs/Animation_card.png" -->
+      </div>
 
     <!-- Content -->
     <div class="carousel-info-wrapper">
