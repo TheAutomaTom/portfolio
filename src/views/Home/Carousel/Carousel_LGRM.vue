@@ -10,9 +10,10 @@
       </span>
       <img
         class="carousel-hero"
-        src="../../../assets/imgs/LGRM_card.png"
         alt="Mobile apps"
-      />
+        src="https://www.surrealitycheck.org/images/hero_lgrm.jpg"
+        />
+        <!-- src="../../../assets/imgs/LGRM_card.png" -->
     </div>
 
     <!-- Content -->
