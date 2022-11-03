@@ -91,7 +91,10 @@ hr {
   display: block;
 }
 .hero-overlay {
-  @apply relative inline-block;
+  @apply relative inline-block ;
+}
+.hero-overlay img{
+  background-color:var(--background-color);  
 }
 .hero-overlay:after {
   @apply absolute inline-block w-full h-full;

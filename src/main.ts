@@ -28,4 +28,8 @@ dynamics.forEach((element) => {
   _app.component(element.name, element.component);
 });
 
+import VueFormattedNumberInputPlugin from 'vue-formatted-number-input';
+// import "vue-formatted-number-input/styles.css";
+_app.use(VueFormattedNumberInputPlugin)
+
 _app.mount("#app");

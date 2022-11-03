@@ -2,7 +2,9 @@
   <div class="m-6">
     <div class="card">
       <h3 class="mb-1" style="font-variant: small-caps">
-        Formatted Number Inputs
+        <a href="https://www.npmjs.com/package/vue-formatted-number-input">
+           vue-formatted=number-input npm package
+          </a>
       </h3>
       <p class="mb-1" style="text-indent: 1em">
         Formatting data for literary expectations is tricky, especially for
@@ -32,31 +34,40 @@
       <div class="row-wrapper">
         <div class="row-feature-wrapper">
           <span class="p-float-label">
-            <input-numbers
-              v-model="numberModel"
-              :initialNumber="numberModel"
+            <vue-formatted-number-input
               id="inputNumbers"
-              :max="999999"
-            />
+
+              :placeholder = "'Props 1'"
+              :prefix = "''"
+              :max = "666"
+              :min = "-111"
+              :allowDecimal = "false"
+              :allowEmpty = "true"
+              :diagnosticMode = "false"
+              />
+              <!-- v-model="numberModel"
+              :initialNumber="numberModel"
+              :max="999999" -->
             <label for="inputNumbers">Integer Model: {{ numberModel }}</label>
           </span>
         </div>
 
         <!------------------------------------------------------------------------>
         <!-- Feature Input -->
-        <div class="row-feature-wrapper">
+        <!-- <div class="row-feature-wrapper">
           <span class="p-float-label">
-            <input-numbers
+            <vue-formatted-number-input
+              
+            id="inputFloat"
               v-model="decimalModel"
               :initialNumber="decimalModel"
-              id="inputFloat"
               :allowDecimal="true"
               :prefix="'$'"
               :max="999999"
             />
             <label for="inputFloat">Currency Model: {{ decimalModel }} </label>
           </span>
-        </div>
+        </div> -->
       </div>
 
       <!------------------------------------------------------------------------>
@@ -68,21 +79,21 @@
       </p>
       <!-- Feature detail -->
       <div class="row-wrapper">
-        <div class="row-feature-wrapper">
+        <!-- <div class="row-feature-wrapper">
           <span class="p-float-label">
-            <input-numbers
+            <vue-formatted-number-input
               v-model="numberModelNoNull"
               id="numberModelNoNull"
               :max="999999"
             />
             <label for="numberModelNoNull">Empty zeros on blur </label>
           </span>
-        </div>
+        </div> -->
         <!------------------------------------------------------------------------>
 
-        <div class="row-feature-wrapper">
+        <!-- <div class="row-feature-wrapper">
           <span class="p-float-label">
-            <input-numbers
+            <vue-formatted-number-input
               v-model="numberModelAllowsNull"
               id="numberAllowsNull"
               :max="999999"
@@ -92,7 +103,7 @@
               numberModelAllowsNull || "Allows null value"
             }}</label>
           </span>
-        </div>
+        </div> -->
       </div>
       <!------------------------------------------------------------------------>
     </div>
