@@ -935,10 +935,10 @@ vue-demi@*:
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.13.6.tgz#f9433cbd75e68a970dec066647f4ba6c08ced48f"
   integrity sha512-02NYpxgyGE2kKGegRPYlNQSL1UWfA/+JqvzhGCOYjhfbLWXU5QQX0+9pAm/R2sCOPKr5NBxVIab7fvFU0B1RxQ==
 
-vue-formatted-number-input@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/vue-formatted-number-input/-/vue-formatted-number-input-0.1.2.tgz#b401a0658a5183cb2cdd46ecba6bf42f37cf7241"
-  integrity sha512-2eRTSZXpQEUGUyy38yNcQNKnJPiojI3NqO+ZxeEQWQZb2hBkTFPiS/W1PWLW+PR/dJ8J3jgkE9te/OHAOZOz+w==
+vue-formatted-number-input@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/vue-formatted-number-input/-/vue-formatted-number-input-0.1.7.tgz#1724df20aa17bbd707ed5b8bf71d6fec6f20b2ff"
+  integrity sha512-JFzQj27VnHMf+rXaAeS7n6J1NdhlIBmaiNxGebka7kYaKhhzIChfNqUVzs/9yc1LM0fjAH/fHlbLW+1K9FJPNA==
   dependencies:
     vue "^3.2.38"
 

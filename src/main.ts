@@ -30,6 +30,7 @@ dynamics.forEach((element) => {
 
 import VueFormattedNumberInputPlugin from 'vue-formatted-number-input';
 // import "vue-formatted-number-input/styles.css";
-_app.use(VueFormattedNumberInputPlugin)
+_app.use(VueFormattedNumberInputPlugin);
+//, { options});
 
 _app.mount("#app");

@@ -3,8 +3,8 @@
     <div class="card">
       <h3 class="mb-1" style="font-variant: small-caps">
         <a href="https://www.npmjs.com/package/vue-formatted-number-input">
-           vue-formatted=number-input npm package
-          </a>
+           vue-formatted-number-input npm package
+        </a>
       </h3>
       <p class="mb-1" style="text-indent: 1em">
         Formatting data for literary expectations is tricky, especially for
@@ -44,7 +44,7 @@
               :allowDecimal = "false"
               :allowEmpty = "true"
               :diagnosticMode = "false"
-              />
+            />
               <!-- v-model="numberModel"
               :initialNumber="numberModel"
               :max="999999" -->

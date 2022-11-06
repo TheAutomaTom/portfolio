@@ -8,7 +8,6 @@
         alt="Front-End User Interfaces"
         src="https://www.surrealitycheck.org/images/hero_vuenarchist.jpg"
         />
-        <!-- src="../../../assets/imgs/Vue_Logo.png" -->
     </div>
 
     <!-- Content -->
