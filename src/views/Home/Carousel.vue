@@ -79,22 +79,22 @@ svg.nav-button-icon {
 .nav-button-l {
   @extend .nav-button;
   grid-column: 1;
-  background: linear-gradient(
-    340deg,
-    rgba(2, 0, 36, 0) 30%,
-    rgba(0, 0, 0, 0.8169468470982143) 100%
-  );
+  // background: linear-gradient(
+  //   340deg,
+  //   rgba(2, 0, 36, 0) 30%,
+  //   rgba(0, 0, 0, 0.8169468470982143) 100%
+  // );
 }
 
 .nav-button-r {
   @extend .nav-button;
   grid-column: 3;
 
-  background: linear-gradient(
-    20deg,
-    rgba(2, 0, 36, 0) 30%,
-    rgba(0, 0, 0, 0.8169468470982143) 100%
-  );
+  // background: linear-gradient(
+  //   20deg,
+  //   rgba(2, 0, 36, 0) 30%,
+  //   rgba(0, 0, 0, 0.8169468470982143) 100%
+  // );
 }
 
 .col-center-top {
